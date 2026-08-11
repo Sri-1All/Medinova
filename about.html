@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediNova | Caring Beyond Medicine</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#F8FBFF;
+        }
+
+        h1,h2,h3,h4,h5{
+            font-family:'Poppins',sans-serif;
+        }
+		
+		
+		.no-scrollbar::-webkit-scrollbar{
+			display:none;
+		}
+
+		.no-scrollbar{
+			-ms-overflow-style:none;
+			scrollbar-width:none;
+		}
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <nav class="flex flex-row justify-between items-center py-2 relative">
+
+           
+
+            <div class="flex items-center justify-between w-full md:w-auto gap-3">
+
+                <img src= "img/MediNova-logo.png" alt="MediNova Logo" class="h-16 md:h-24 w-auto">
+      
+            </div>
+
+           
+
+            <ul class="hidden md:flex flex-wrap justify-center gap-8 mt-5 lg:mt-0">
+
+                <li><a href="index.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Home</a></li>   
+                <li><a href="about.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">About</a></li>    
+                <li><a href="departments.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Departments</a></li>   
+                <li><a href="doctors.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Doctors</a></li> 
+                <li><a href="services.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Services</a></li>				
+                <li><a href="contact.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Contact</a></li> 
+			    <button><a href="appointment.html" class="mt-5 lg:mt-0 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3 rounded-full duration-300 shadow-lg">Book Appointment</a></button>
+				
+            </ul>
+            
+			
+		    <!--3 lines-hamburger-->
+			<label for="menuToggle" class ="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			</label>
+			
+			
+            
+			
+        </nav>
+		<!--peer element's state for sm devices-->
+			<input type = "checkbox" id="menuToggle" class="hidden peer"/>
+			<div class="hidden peer-checked:block md:hidden bg-white px-6 pb-4">
+			<ul class="flex flex-col space-y-3 text-blue-800 font-medium">
+			<li><a href = "index.html" class="block hover:text-sky-600">Home</a></li>
+			<li><a href = "about.html" class="block hover:text-sky-600">About</a></li>
+			<li><a href = "departments.html" class="block hover:text-sky-600">Departments</a></li>
+			<li><a href = "doctors.html" class="block hover:text-sky-600">Doctors</a></li>
+			<li><a href = "services.html" class="block hover:text-sky-600">Services</a></li>
+			<li><a href = "contact.html" class="block hover:text-sky-600">Contact</a></li>
+			</ul>
+			<button><a href="appointment.html" class="inline-block mt-5 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3  rounded-full duration-300 shadow-lg">Book Appointment </a></button>
+			</div>
+		
+		
+
+    </div>
+
+</header>
+
+<!-- ================= ABOUT HERO SECTION ================= -->
+
+<section class="relative h-[320px] md:h-[500px] lg:h-[600px]">
+
+    <img src="img/about-banner.jpeg"  alt="MediNova Hospital" class="absolute inset-0 w-full h-full object-cover">
+  
+    <!-- Dark shade for banner img -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    
+    <div class="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
+
+        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold">About MediNova</h1>
+       
+        <p class="text-gray-200 mt-5 max-w-3xl text-base md:text-lg leading-8">
+            Delivering trusted healthcare with compassion, innovation, and
+            excellence. Discover our journey, our dedicated medical
+            professionals, and our commitment to providing exceptional care
+            for every patient.
+        </p>
+
+        <!-- to link - breadcrumb -->
+        <div class="flex items-center gap-3 mt-8 text-white text-sm md:text-base">
+
+            <a href="index.html"class="hover:text-sky-400 transition duration-300">Home</a>
+           
+            <span>/</span>
+
+            <span class="text-sky-400">About Us</span>
+     
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT MEDINOVA ================= -->
+
+<section class="bg-white py-16 md:py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+          
+            <div>
+                <img src="img/doctor-discussing-to-patient.png"  alt="MediNova Hospital"  class="rounded-3xl shadow-xl w-full object-cover">
+            </div>
+
+           
+            <div>
+
+                <p class="text-sky-600 font-semibold uppercase tracking-widest mb-3"> About MediNova </p>
+              
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"> Trusted Healthcare.<br> Compassionate People.<br>  Exceptional Outcomes.</h2>
+
+                <p class="text-gray-600 mt-6 leading-8">
+
+                    At <span class="font-semibold">MediNova Hospital</span>, we believe that
+                    healthcare is more than treating illnesses—it is about caring for people.
+                    Our experienced doctors, skilled nurses, and dedicated support staff work
+                    together to provide safe, compassionate, and patient-focused care.
+
+                </p>
+
+                <p class="text-gray-600 mt-5 leading-8">
+
+                    Equipped with advanced medical technology and modern infrastructure,
+                    we offer comprehensive healthcare services across multiple specialties,
+                    ensuring accurate diagnosis and effective treatment for every patient.
+
+                </p>
+
+                <p class="text-gray-600 mt-5 leading-8">
+
+                    From preventive health check-ups to emergency care, MediNova is committed
+                    to improving lives through clinical excellence, innovation, and a
+                    patient-first approach.
+
+                </p>
+
+                <!-- Highlights -->
+
+                <div class="grid grid-cols-2 gap-5 mt-10">
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="bg-sky-100 h-12 w-12 rounded-full flex items-center justify-center">
+						  <i class="fa-solid fa-hospital text-sky-600 text-lg"></i>
+                        </div>
+						 
+                        <div>
+
+                            <h4 class="font-bold text-gray-800">15+ Years  </h4>
+                                
+                           
+
+                            <p class="text-sm text-gray-500">Healthcare Excellence</p>
+                     
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="bg-sky-100 h-12 w-12 rounded-full flex items-center justify-center">
+						     <i class="fa-solid fa-user-doctor text-sky-600 text-lg"></i>
+						</div>
+
+                        <div>
+                            <h4 class="font-bold text-gray-800">50+ Doctors</h4>
+                            <p class="text-sm text-gray-500">Expert Specialists</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="bg-sky-100 h-12 w-12 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-truck-medical text-sky-600 text-lg"></i>
+                        </div>
+				
+                        <div>
+                            <h4 class="font-bold text-gray-800">24×7</h4>
+                            <p class="text-sm text-gray-500">Emergency Care </p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="bg-sky-100 h-12 w-12 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-heart-pulse text-sky-600 text-lg"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-gray-800">Patient First</h4>
+                            <p class="text-sm text-gray-500">Compassionate Care</p>        
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+
+                <button>
+				<a href="appointment.html"class="inline-block mt-10 bg-sky-600 hover:bg-sky-700 text-white font-semibold px-8 py-4 rounded-full transition duration-300">  
+                    Book an Appointment
+                </a>
+				</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================= VISION & MISSION =================-->
+
+<section class="bg-slate-50 py-16 md:py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Section Heading -->
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px] text-sky-600 font-semibold">Our Purpose </p>             
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">Vision & Mission </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-8">
+                At MediNova, our vision and mission guide every decision we make,
+                ensuring exceptional healthcare experiences through innovation,
+                compassion, and excellence.
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14">
+
+            <!-- Vision -->
+
+            <div class="bg-white border-sky-600 border-5 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 p-10">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-eye text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-8">Our Vision</h3>
+                <p class="text-gray-600 mt-5 leading-8">
+                    To be a trusted leader in healthcare by delivering world-class
+                    medical services, embracing innovation, and creating healthier
+                    communities through compassionate, patient-centered care.
+                </p>
+
+            </div>
+
+            <!-- Mission -->
+
+            <div class="bg-white border-sky-600 border-5 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 p-10">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-bullseye text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-8"> Our Mission  </h3>
+          
+                <p class="text-gray-600 mt-5 leading-8">
+                    To provide accessible, ethical, and high-quality healthcare
+                    through advanced technology, skilled professionals, continuous
+                    learning, and an unwavering commitment to patient well-being.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================= WHY CHOOSE MEDINOVA =================-->
+
+<section class="bg-white py-16 md:py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center">
+
+            <p class="uppercase tracking-[4px] text-sky-600 font-semibold">Why Choose Us </p>
+                
+           
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">Healthcare You Can Trust </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-8">
+                Every patient deserves exceptional care. At MediNova, we combine
+                experienced medical professionals, advanced technology, and
+                compassionate service to deliver the highest standards of healthcare.
+            </p>
+
+        </div>
+
+        <!-- Feature Cards -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+            <!-- Card 1 -->
+
+            <div class="bg-slate-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-user-doctor text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold mt-6">Experienced Specialists  </h3>
+          
+                <p class="text-gray-600 mt-4 leading-7">
+                    Our multidisciplinary team of highly qualified doctors delivers
+                    personalized care with years of clinical expertise.
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="bg-slate-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-microscope text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold mt-6"> Advanced Technology </h3>
+                   
+                
+
+                <p class="text-gray-600 mt-4 leading-7">Equipped with modern diagnostic equipment and advanced treatment technologies for accurate and effective healthcare.</p>
+    
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="bg-slate-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-truck-medical text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold mt-6">24/7 Emergency Care  </h3>
+          
+                <p class="text-gray-600 mt-4 leading-7">
+                    Our emergency department is available around the clock with
+                    rapid response teams ready to handle critical situations.
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="bg-slate-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-heart-pulse text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold mt-6">Patient-Centered Care </h3>
+          
+                <p class="text-gray-600 mt-4 leading-7">
+                    Every treatment plan is tailored to individual patient needs,
+                    ensuring comfort, dignity, and compassionate support.
+                </p>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="bg-slate-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-hospital text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold mt-6">Modern Infrastructure </h3>
+        
+                <p class="text-gray-600 mt-4 leading-7">
+                    Spacious patient rooms, advanced operation theatres, intensive
+                    care units, and world-class medical facilities.
+                </p>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="bg-slate-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                    <i class="fa-solid fa-award text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold mt-6"> Quality & Safety  </h3>
+          
+                <p class="text-gray-600 mt-4 leading-7">
+                    We follow strict quality protocols and patient safety standards
+                    to ensure trusted healthcare services every day.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================= OUR CORE VALUES =================-->
+
+<section class="bg-sky-50 py-16 md:py-24 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+
+            <div>
+
+                <p class="uppercase tracking-[4px] text-sky-600 font-semibold"> Our Core Values </p>
+         
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3"> Values That Define Our Care </h2>
+        
+                <p class="text-gray-600 max-w-2xl mt-5 leading-8">
+                    Every decision we make is guided by compassion, integrity,
+                    excellence, innovation, teamwork and community care to
+                    deliver exceptional healthcare experiences.
+                </p>
+
+            </div>
+
+            <!-- Decorative Navigation -->
+
+            <div class="flex gap-3">
+
+                <button onclick="scrollValues(-1)"
+                    class="h-12 w-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-sky-600 hover:text-white transition duration-300">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+                <button onclick="scrollValues(1)"
+                    class="h-12 w-12 rounded-full bg-sky-600 text-white shadow-md flex items-center justify-center hover:bg-sky-700 transition duration-300">
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div
+		    id="valuesContainer"
+            class="mt-14 flex gap-8 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth pb-4">
+
+            <!-- Card 1 -->
+
+            <div
+                class="w-[285px] h-[360px] bg-white rounded-[28px] border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03] transition duration-500 flex-shrink-0 snap-center p-8 flex flex-col">
+
+                <div
+                    class="h-20 w-20 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow">
+
+                    <i class="fa-solid fa-hand-holding-heart text-sky-600 text-3xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-7">Compassion  </h3>
+                    
+              
+
+                <p class="text-gray-600 mt-4 leading-7 flex-grow">
+                    We care for every patient with empathy, kindness and respect,
+                    ensuring comfort throughout every stage of treatment.
+                </p>
+
+                <div class="border-t border-gray-100 pt-4">
+
+                    <a href="#" class="text-sky-600 font-semibold hover:text-sky-700">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div
+                class="w-[285px] h-[360px] bg-white rounded-[28px] border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03] transition duration-500 flex-shrink-0 snap-center p-8 flex flex-col">
+
+                <div
+                    class="h-20 w-20 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow">
+
+                    <i class="fa-solid fa-shield-heart text-sky-600 text-3xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-7">
+                    Integrity
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7 flex-grow">
+                    We uphold honesty, transparency and ethical medical
+                    practices in every interaction and clinical decision.
+                </p>
+
+                <div class="border-t border-gray-100 pt-4">
+
+                    <a href="#" class="text-sky-600 font-semibold hover:text-sky-700">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div
+                class="w-[285px] h-[360px] bg-white rounded-[28px] border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03] transition duration-500 flex-shrink-0 snap-center p-8 flex flex-col">
+
+                <div
+                    class="h-20 w-20 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow">
+
+                    <i class="fa-solid fa-star text-sky-600 text-3xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-7">
+                    Excellence
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7 flex-grow">
+                    We pursue excellence through advanced technology,
+                    continuous learning and outstanding patient care.
+                </p>
+
+                <div class="border-t border-gray-100 pt-4">
+
+                    <a href="#" class="text-sky-600 font-semibold hover:text-sky-700">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div
+                class="w-[285px] h-[360px] bg-white rounded-[28px] border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03] transition duration-500 flex-shrink-0 snap-center p-8 flex flex-col">
+
+                <div
+                    class="h-10 w-15 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow">
+
+                    <i class="fa-solid fa-lightbulb text-sky-600 text-3xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-7">
+                    Innovation
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7 flex-grow">
+                    We embrace innovation and modern healthcare solutions to
+                    improve patient outcomes and experiences.
+                </p>
+
+                <div class="border-t border-gray-100 pt-4">
+
+                    <a href="#" class="text-sky-600 font-semibold hover:text-sky-700">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div
+                class="w-[285px] h-[360px] bg-white rounded-[28px] border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03] transition duration-500 flex-shrink-0 snap-center p-8 flex flex-col">
+
+                <div
+                    class="h-10 w-15 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow">
+
+                    <i class="fa-solid fa-users text-sky-600 text-3xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-7">
+                    Teamwork
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7 flex-grow">
+                    Our multidisciplinary teams collaborate seamlessly to
+                    deliver coordinated and effective medical care.
+                </p>
+
+                <div class="border-t border-gray-100 pt-4">
+
+                    <a href="#" class="text-sky-600 font-semibold hover:text-sky-700">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div
+                class="w-[285px] h-[360px] bg-white rounded-[28px] border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.03] transition duration-500 flex-shrink-0 snap-center p-8 flex flex-col">
+
+                <div
+                    class="h-20 w-20 rounded-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center shadow">
+
+                    <i class="fa-solid fa-earth-asia text-sky-600 text-3xl"></i>
+
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-7">
+                    Community Care
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7 flex-grow">
+                    We are committed to promoting healthier communities through
+                    awareness, outreach and preventive healthcare.
+                </p>
+
+                <div class="border-t border-gray-100 pt-4">
+
+                    <a href="#" class="text-sky-600 font-semibold hover:text-sky-700">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================= OUR JOURNEY =================-->
+
+<section class="bg-white py-16 md:py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-20">
+
+            <p class="uppercase tracking-[4px] text-sky-600 font-semibold">
+                Our Journey
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
+                Milestones That Shaped MediNova
+            </h2>
+
+            <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-8">
+                Since our inception, MediNova Hospital has continuously evolved,
+                embracing innovation, expanding specialties, and delivering
+                compassionate healthcare to thousands of patients.
+            </p>
+
+        </div>
+
+        <!-- Timeline -->
+
+        <div class="relative">
+
+            <!-- Vertical Line -->
+
+            <div class="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-sky-200 -translate-x-1/2"></div>
+
+            <!-- 2010 -->
+
+            <div class="relative grid md:grid-cols-2 items-center gap-10 mb-20">
+
+                <div class="md:text-right">
+
+                    <div class="bg-sky-50 rounded-3xl shadow-lg p-8 hover:shadow-2xl transition duration-300">
+
+                        <div class="flex md:justify-end mb-5">
+
+                            <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                                <i class="fa-solid fa-hospital text-sky-600 text-2xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900">
+                            Hospital Established
+                        </h3>
+
+                        <p class="text-gray-600 mt-4 leading-8">
+                            MediNova Hospital was founded with a vision to provide
+                            ethical, affordable and patient-centered healthcare.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="relative">
+
+                    <div class="hidden md:flex absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2
+                    h-14 w-14 rounded-full bg-sky-600 text-white font-bold
+                    items-center justify-center shadow-xl">
+
+                        2010
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 2014 -->
+
+            <div class="relative grid md:grid-cols-2 items-center gap-10 mb-20">
+
+                <div></div>
+
+                <div>
+
+                    <div class="bg-sky-50 rounded-3xl shadow-lg p-8 hover:shadow-2xl transition duration-300">
+
+                        <div class="mb-5">
+
+                            <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                                <i class="fa-solid fa-user-doctor text-sky-600 text-2xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900">
+                            Multi-Specialty Expansion
+                        </h3>
+
+                        <p class="text-gray-600 mt-4 leading-8">
+                            Expanded healthcare services with highly qualified
+                            specialists across multiple departments.
+                        </p>
+
+                    </div>
+
+                    <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                    h-14 w-14 rounded-full bg-sky-600 text-white font-bold
+                    items-center justify-center shadow-xl">
+
+                        2014
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 2018 -->
+
+            <div class="relative grid md:grid-cols-2 items-center gap-10 mb-20">
+
+                <div class="md:text-right">
+
+                    <div class="bg-sky-50 rounded-3xl shadow-lg p-8 hover:shadow-2xl transition duration-300">
+
+                        <div class="flex md:justify-end mb-5">
+
+                            <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                                <i class="fa-solid fa-stethoscope text-sky-600 text-2xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold">
+                            Advanced Diagnostics
+                        </h3>
+
+                        <p class="text-gray-600 mt-4 leading-8">
+                            Introduced modern laboratories and diagnostic
+                            technologies for faster and more accurate care.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                    h-14 w-14 rounded-full bg-sky-600 text-white font-bold
+                    items-center justify-center shadow-xl z-19">
+
+                        2018
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 2022 -->
+
+            <div class="relative grid md:grid-cols-2 items-center gap-10 mb-20">
+
+                <div></div>
+
+                <div>
+
+                    <div class="bg-sky-50 rounded-3xl shadow-lg p-8 hover:shadow-2xl transition duration-300">
+
+                        <div class="mb-5">
+
+                            <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                                <i class="fa-solid fa-laptop-medical text-sky-600 text-2xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold">
+                            Smart Healthcare
+                        </h3>
+
+                        <p class="text-gray-600 mt-4 leading-8">
+                            Adopted digital health records and smart hospital
+                            technologies to enhance patient care.
+                        </p>
+
+                    </div>
+
+                    <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                    h-14 w-14 rounded-full bg-sky-600 text-white font-bold
+                    items-center justify-center shadow-xl">
+
+                        2022
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 2025 -->
+
+            <div class="relative grid md:grid-cols-2 items-center gap-10">
+
+                <div class="md:text-right">
+
+                    <div class="bg-sky-50 rounded-3xl shadow-lg p-8 hover:shadow-2xl transition duration-300">
+
+                        <div class="flex md:justify-end mb-5">
+
+                            <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center">
+
+                                <i class="fa-solid fa-award text-sky-600 text-2xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-bold">
+                            Trusted by Thousands
+                        </h3>
+
+                        <p class="text-gray-600 mt-4 leading-8">
+                            Today, MediNova continues to deliver exceptional
+                            healthcare with trust, compassion, and clinical excellence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                    h-14 w-14 rounded-full bg-sky-600 text-white font-bold
+                    items-center justify-center shadow-xl z-20">
+
+                        2025
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================= MEDINOVA AT A GLANCE =================-->
+
+<section class="bg-gradient-to-r from-sky-600 via-sky-700 to-blue-800 py-16 md:py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+        <!-- Heading -->
+
+        <div class="text-center text-white">
+
+            <p class="uppercase tracking-[4px] font-semibold">
+                MediNova At A Glance
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">
+                Excellence Reflected in Numbers
+            </h2>
+
+            <p class="max-w-3xl mx-auto mt-5 text-sky-100 leading-8">
+                Every milestone reflects our commitment to delivering quality
+                healthcare, compassionate service, and medical excellence.
+            </p>
+
+        </div>
+
+        <!-- Stats -->
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+
+            <!-- Card 1 -->
+
+            <div class="bg-white rounded-3xl p-8 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center mx-auto">
+
+                    <i class="fa-solid fa-user-doctor text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-4xl font-bold text-sky-600 mt-6">
+                    50+
+                </h3>
+
+                <p class="text-gray-700 mt-2 font-medium">
+                    Expert Doctors
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="bg-white rounded-3xl p-8 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center mx-auto">
+
+                    <i class="fa-solid fa-hospital text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-4xl font-bold text-sky-600 mt-6">
+                    20+
+                </h3>
+
+                <p class="text-gray-700 mt-2 font-medium">
+                    Medical Specialties
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="bg-white rounded-3xl p-8 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center mx-auto">
+
+                    <i class="fa-solid fa-heart-circle-check text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-4xl font-bold text-sky-600 mt-6">
+                    100K+
+                </h3>
+
+                <p class="text-gray-700 mt-2 font-medium">
+                    Happy Patients
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="bg-white rounded-3xl p-8 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+
+                <div class="bg-sky-100 h-16 w-16 rounded-full flex items-center justify-center mx-auto">
+
+                    <i class="fa-solid fa-award text-sky-600 text-2xl"></i>
+
+                </div>
+
+                <h3 class="text-4xl font-bold text-sky-600 mt-6">
+                    15+
+                </h3>
+
+                <p class="text-gray-700 mt-2 font-medium">
+                    Years of Excellence
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bg-[#F5F7FB] py-16 px-6 md:px-16 lg:px-24">
+
+	<div class="text-center mb-12">
+		<h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+		  Message from Our Medical Director
+		</h2>
+		<p class="text-gray-500 mt-2">
+		  Leadership guided by care, trust, and innovation
+		</p>
+	</div>
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Image -->
+    <div>
+      <img 
+        src="https://images.unsplash.com/photo-1582750433449-648ed127bb54"
+        class="rounded-2xl shadow-lg w-full h-[420px] object-cover"
+        alt="Medical Director"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-sky-600">
+
+      <p class="text-gray-600 leading-relaxed mb-6 italic">
+        “At MediNova, our mission has always been to combine advanced medical technology
+        with compassionate care. Every patient who walks through our doors deserves
+        dignity, attention, and world-class treatment.”
+      </p>
+
+      <p class="text-gray-600 leading-relaxed mb-6">
+        We continue to invest in innovation, skilled professionals, and modern
+        infrastructure to ensure the highest standards of healthcare delivery.
+      </p>
+
+      <div class="mt-8">
+        <h4 class="font-semibold text-gray-800">Dr. Rajesh Kumar</h4>
+        <p class="text-gray-500">Medical Director, MediNova</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="bg-white py-16 px-6 md:px-16 lg:px-24">
+
+  <!-- Heading -->
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+      Accreditations & Certifications
+    </h2>
+    <p class="text-gray-500 mt-3">
+      Trusted by global healthcare standards and quality boards
+    </p>
+  </div>
+
+  <!-- Logo Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-10 items-center">
+
+    <!-- NABH -->
+    <div class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKITKNwErEkZpwpVUSrmQT7K6QW9jiypzdGJNylh7Obg&s=10"
+           class="h-16 object-contain grayscale hover:grayscale-0 transition"
+           alt="NABH" />
+      <p class="text-gray-600 mt-3 font-medium">NABH</p>
+    </div>
+
+    <!-- ISO -->
+    <div class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqec-guwJLngMjAniX5FxcmZoUsGQfy0DOun2B0Um7A&s=10"
+           class="h-16 object-contain grayscale hover:grayscale-0 transition"
+           alt="ISO" />
+      <p class="text-gray-600 mt-3 font-medium">ISO 9001:2015</p>
+    </div>
+
+    <!-- JCI -->
+    <div class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbAjjNlWv4gvOhZQ1mvccOkobflFn2jfw-QXM0WeOlQ&s"
+           class="h-16 object-contain grayscale hover:grayscale-0 transition"
+           alt="JCI" />
+      <p class="text-gray-600 mt-3 font-medium">JCI Accredited</p>
+    </div>
+
+    <!-- WHO -->
+    <div class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition">
+      <img src="https://cdn.who.int/media/images/default-source/infographics/who-emblem.png?sfvrsn=877bb56a_2"
+           class="h-16 object-contain grayscale hover:grayscale-0 transition"
+           alt="WHO" />
+      <p class="text-gray-600 mt-3 font-medium">WHO Standards</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="bg-gradient-to-r from-sky-600 via-sky-700 to-blue-800 text-white py-16 px-6 md:px-16 lg:px-24 text-center">
+
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Need Medical Assistance?
+  </h2>
+
+  <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+    Our specialists are available 24/7 to help you with consultations, emergencies,
+    and advanced treatment support.
+  </p>
+
+  <div class="flex flex-col md:flex-row justify-center gap-4">
+    <button>
+		<a href="appointment.html 			"
+		   class="border border-white  font-semibold px-6 py-3 rounded-full hover:bg-gray-100 hover:text-black transition">
+		  Book Appointment
+		</a>
+	</button>
+    
+	<button>
+		<a href="contact.html"
+		   class="border border-white  px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
+		  Contact Us
+		</a>
+	</button>
+  </div>
+
+</section>
+
+<script>
+
+function scrollValues(direction) {
+
+    const container = document.getElementById("valuesContainer");
+
+    container.scrollBy({
+        left: direction * 320,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer class="bg-slate-900 text-white pt-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+
+            <!-- Column 1 -->
+
+            <div class="lg:col-span-2">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="img/MediNova-logo.png" class="h-20 rounded" alt="MediNova Logo">
+                
+                    <div>
+
+                        <h2 class="text-3xl font-bold">MediNova</h2>
+                      
+                        <p class="tracking-[3px] uppercase text-sky-400 text-sm">Healthcare</p>
+                 
+                    </div>
+
+                </div>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    MediNova is committed to delivering compassionate,
+                    high-quality healthcare with advanced medical
+                    technology and experienced professionals. Your
+                    health and well-being remain our highest priority.
+
+                </p>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Column 2 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8"> Quick Links </h3>
+
+                <ul class="space-y-4 text-gray-300">
+                    <li><a href="index.html" class="hover:text-sky-400 duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-sky-400 duration-300">About Us</a></li>
+					<li><a href="departments.html" class="hover:text-sky-400 duration-300">Departments</a></li>
+				    <li><a href="doctors.html" class="hover:text-sky-400 duration-300">Doctors</a></li>
+                    <li><a href="services.html" class="hover:text-sky-400 duration-300">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-sky-400 duration-300">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Column 3 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">Our Services</h3>
+       
+                <ul class="space-y-4 text-gray-300">
+                    <li>Cardiology</li>
+                    <li>Neurology</li>
+                    <li>Orthopedics</li>
+                    <li>Pediatrics</li>					
+					<li>Ophthalmology</li>
+					<li>Women's Health</li>
+					<li>Dental Care</li>
+					<li>Pulmonology</li>
+                    <li>General Medicine</li>
+					<li>Pathology</li>
+					<li>Dermatology</li>
+					<li>Oncology</li>
+                    <li>Emergency Care</li>
+                </ul>
+
+            </div>
+
+            <!-- Column 4 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">Contact Info </h3>
+                <div class="space-y-6 text-gray-300">
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-location-dot text-sky-400 mt-1"></i>
+
+                        <p> 123 Healthcare Avenue,Chennai,Tamil Nadu</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-phone text-sky-400 mt-1"></i>
+                        <p>+91 98765 43210 </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-envelope text-sky-400 mt-1"></i>
+                        <p>info@medinova.com </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-regular fa-clock text-sky-400 mt-1"></i>
+                        <p>Mon - Sat<br>8:00 AM - 9:00 PM </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="border-t border-slate-700 mt-16">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+          <p class="text-gray-400 text-center">© 2026 MediNova Healthcare.All Rights Reserved. </p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

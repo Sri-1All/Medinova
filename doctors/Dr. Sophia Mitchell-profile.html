@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediNova | Caring Beyond Medicine</title>
+ 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#F8FBFF;
+        }
+
+        h1,h2,h3,h4,h5{
+            font-family:'Poppins',sans-serif;
+        }
+		
+		@keyframes marquee {
+			from {
+			transform: translateX(0%);
+			}
+
+			to {
+				transform: translateX(-50%);
+			}
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <nav class="flex flex-row justify-between items-center py-2 relative">
+
+           
+
+            <div class="flex items-center justify-between w-full md:w-auto gap-3">
+
+                <img src= "../img/MediNova-logo.png" alt="MediNova Logo" class="h-16 md:h-24 w-auto">
+      
+            </div>
+
+           
+
+            <ul class="hidden md:flex flex-wrap justify-center gap-8 mt-5 lg:mt-0">
+
+                <li><a href="../index.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Home</a></li>   
+                <li><a href="../about.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">About</a></li>    
+                <li><a href="../departments.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Departments</a></li>   
+                <li><a href="../doctors.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Doctors</a></li> 
+                <li><a href="../services.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Services</a></li>				
+                <li><a href="../contact.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Contact</a></li> 
+			    <li><a href="../appointment.html" class="mt-5 lg:mt-0 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3 rounded-full duration-300 shadow-lg">Book Appointment</a></li>
+				
+            </ul>
+            
+			
+		    <!--3 lines-hamburger-->
+			<label for="menuToggle" class ="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			</label>
+			
+			
+            
+			
+        </nav>
+		<!--peer element's state for sm devices-->
+			<input type = "checkbox" id="menuToggle" class="hidden peer"/>
+			<div class="hidden peer-checked:block md:hidden bg-white px-6 pb-4">
+			<ul class="flex flex-col space-y-3 text-blue-800 font-medium">
+			<li><a href = "../index.html" class="block hover:text-sky-600">Home</a></li>
+			<li><a href = "../about.html" class="block hover:text-sky-600">About</a></li>
+			<li><a href = "../departments.html" class="block hover:text-sky-600">Departments</a></li>
+			<li><a href = "../doctors.html" class="block hover:text-sky-600">Doctors</a></li>
+			<li><a href = "../services.html" class="block hover:text-sky-600">Services</a></li>
+			<li><a href = "../contact.html" class="block hover:text-sky-600">Contact</a></li>
+			</ul>
+			<a href="../appointment.html" class="inline-block mt-5 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3  rounded-full duration-300 shadow-lg">Book Appointment </a>
+			</div>
+		
+		
+
+    </div>
+
+</header>
+
+<!-- Doctor Profile Hero -->
+<section class="bg-gradient-to-br from-sky-50 via-white to-cyan-50 py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-gray-500 mb-10">
+            <a href="../index.html" class="hover:text-sky-600 transition">Home</a>
+            <span class="mx-2">/</span>
+
+            <a href="../doctors.html" class="hover:text-sky-600 transition">Doctors</a>
+            <span class="mx-2">/</span>
+
+            <span class="text-sky-600 font-medium">Dr. Sophia Mitchell</span>
+        </nav>
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+            <!-- Doctor Image -->
+            <div class="flex justify-center">
+
+                <div class="relative w-full max-w-md h-[540px]">
+
+                    <div class="absolute -top-5 -left-5 w-full h-full rounded-3xl border-2 border-sky-200"></div>
+
+                    <img src="../img/Dr.sophia Mitchell.jpg"
+                        alt="Dr. Sophia Mitchell"
+                        class="relative rounded-3xl shadow-2xl w-full h-full max-w-md object-cover">
+
+                </div>
+
+            </div>
+
+            <!-- Doctor Details -->
+            <div>
+
+                <span class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold">
+                    Senior Consultant
+                </span>
+
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mt-5">
+                   Dr. Sophia Mitchell
+                </h1>
+
+                <p class="text-2xl text-sky-600 font-semibold mt-3">
+                    Dermatologist
+                </p>
+
+                <!-- Rating -->
+                <div class="flex items-center mt-5">
+
+                    <div class="text-yellow-400 text-xl">
+                        ★★★★★
+                    </div>
+
+                    <span class="ml-3 text-gray-600">
+                        4.7 Rating (214 Reviews)
+                    </span>
+
+                </div>
+
+                <!-- Quick Details -->
+                <div class="grid sm:grid-cols-2 gap-5 mt-8">
+
+                    <div class="bg-white rounded-2xl shadow-md p-5">
+                        <p class="text-gray-500 text-sm">Qualification</p>
+                        <h3 class="font-semibold text-gray-800 mt-1">
+                           MBBS, MD Dermatology
+                        </h3>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-md p-5">
+                        <p class="text-gray-500 text-sm">Experience</p>
+                        <h3 class="font-semibold text-gray-800 mt-1">
+                            12+ Years
+                        </h3>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-md p-5">
+                        <p class="text-gray-500 text-sm">Consultation Fee</p>
+                        <h3 class="font-semibold text-gray-800 mt-1">
+                            ₹800
+                        </h3>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-md p-5">
+                        <p class="text-gray-500 text-sm">Availability</p>
+                        <h3 class="font-semibold text-green-600 mt-1">
+                            Mon - Sat | 10:00 AM - 4:00 PM
+                        </h3>
+                    </div>
+
+                </div>
+
+                <!-- Short Description -->
+                <p class="text-gray-600 leading-8 mt-8">
+                    Dr. Sophia Mitchell specializes in diagnosing and treating
+					a wide range of skin, hair, and nail conditions. She provides
+					personalized dermatological care for patients dealing with
+					acne, skin allergies, pigmentation, eczema, and hair disorders,
+					helping them achieve healthy and confident skin.
+
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4 mt-10">
+
+                    <a href="../appointment.html"
+                        class="bg-sky-600 hover:bg-sky-700 text-white px-8 py-3 rounded-xl font-semibold transition duration-300">
+                        Book Appointment
+                    </a>
+
+                    <a href="tel:+911234567890"
+                        class="border-2 border-sky-600 text-sky-600 hover:bg-sky-600 hover:text-white px-8 py-3 rounded-xl font-semibold transition duration-300">
+                        Contact Doctor
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- About Doctor -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="mb-10">
+
+            <span class="inline-block bg-sky-100 text-sky-700 text-sm font-semibold px-4 py-2 rounded-full mb-4">
+                About the Doctor
+            </span>
+
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800">           
+             Expert Care for Healthy Skin & Hair
+            </h2>
+
+            <div class="w-20 h-1 bg-sky-600 rounded-full mt-4"></div>
+
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-10 items-start">
+
+            <!-- Left Side -->
+            <div class="lg:col-span-2 text-justify">
+
+                <p class="text-gray-600 leading-8 mb-6"> 
+					Dr. Sophia Mitchell is an experienced Dermatologist with
+					over 12 years of expertise in diagnosing and managing various
+					skin, hair, and nail conditions. She is committed to providing
+					individualized treatment plans that improve skin health,
+					appearance, and overall confidence.
+
+                </p>
+
+                <p class="text-gray-600 leading-8 mb-6">
+                  Her clinical expertise includes acne treatment, eczema,
+				psoriasis, skin allergies, pigmentation disorders, hair loss,
+				and common dermatological infections. She combines modern
+				diagnostic techniques with evidence-based treatments to provide
+				safe and effective care for her patients.
+
+				  
+                </p>
+
+                <p class="text-gray-600 leading-8">
+                  Dr. Mitchell believes that healthy skin begins with proper
+				diagnosis, consistent care, and patient awareness. She focuses
+				on educating patients about skincare routines and preventive
+				measures while providing personalized treatment for their
+				individual needs.
+
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="bg-sky-50 border border-sky-100 rounded-3xl p-8">
+
+                <h3 class="text-xl font-semibold text-gray-800 mb-5">
+                    Doctor's Philosophy
+                </h3>
+
+                <p class="italic text-gray-600 leading-8">    
+					"Healthy skin is not only about appearance. My goal is to
+					understand each patient's concerns, provide the right treatment,
+					and help them feel comfortable and confident in their own skin."
+                </p>
+
+                <div class="mt-8 border-t border-sky-200 pt-6">
+
+                    <h4 class="font-semibold text-gray-800 mb-3">
+                        Special Interests
+                    </h4>
+
+                    <ul class="list-disc list-inside space-y-3 text-gray-600">
+
+                        <li>Acne & Acne Scar Management</li>
+
+                        <li>Skin Allergy & Eczema Treatment</li>
+
+                        <li>Pigmentation & Skin Rejuvenation</li>
+
+                        <li>Hair Loss & Scalp Disorders</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ===================== FOOTER ===================== -->
+
+<footer class="bg-slate-900 text-white pt-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+
+            <!-- Column 1 -->
+
+            <div class="lg:col-span-2">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="../img/MediNova-logo.png" class="h-20 rounded" alt="MediNova Logo">
+                
+                    <div>
+
+                        <h2 class="text-3xl font-bold">MediNova</h2>
+                      
+                        <p class="tracking-[3px] uppercase text-sky-400 text-sm">Healthcare</p>
+                 
+                    </div>
+
+                </div>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    MediNova is committed to delivering compassionate,
+                    high-quality healthcare with advanced medical
+                    technology and experienced professionals. Your
+                    health and well-being remain our highest priority.
+
+                </p>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Column 2 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8"> Quick Links </h3>
+
+                <ul class="space-y-4 text-gray-300">
+                    <li><a href="index.html" class="hover:text-sky-400 duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-sky-400 duration-300">About Us</a></li>
+					<li><a href="departments.html" class="hover:text-sky-400 duration-300">Departments</a></li>
+				    <li><a href="doctors.html" class="hover:text-sky-400 duration-300">Doctors</a></li>
+                    <li><a href="services.html" class="hover:text-sky-400 duration-300">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-sky-400 duration-300">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Column 3 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">Our Services</h3>
+       
+                <ul class="space-y-4 text-gray-300">
+                    <li>Cardiology</li>
+                    <li>Neurology</li>
+                    <li>Orthopedics</li>
+                    <li>Pediatrics</li>					
+					<li>Ophthalmology</li>
+					<li>Women's Health</li>
+					<li>Dental Care</li>
+					<li>Pulmonology</li>
+                    <li>General Medicine</li>
+					<li>Pathology</li>
+					<li>Dermatology</li>
+					<li>Oncology</li>
+                    <li>Emergency Care</li>
+                </ul>
+
+            </div>
+
+            <!-- Column 4 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">Contact Info </h3>
+                <div class="space-y-6 text-gray-300">
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-location-dot text-sky-400 mt-1"></i>
+
+                        <p> 123 Healthcare Avenue,Chennai,Tamil Nadu</p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-phone text-sky-400 mt-1"></i>
+                        <p>+91 98765 43210 </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-envelope text-sky-400 mt-1"></i>
+                        <p>info@medinova.com </p>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="fa-regular fa-clock text-sky-400 mt-1"></i>
+                        <p>Mon - Sat<br>8:00 AM - 9:00 PM </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="border-t border-slate-700 mt-16">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+          <p class="text-gray-400 text-center">© 2026 MediNova Healthcare.All Rights Reserved. </p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

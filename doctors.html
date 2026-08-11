@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediNova | Caring Beyond Medicine</title>
+ 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#F8FBFF;
+        }
+
+        h1,h2,h3,h4,h5{
+            font-family:'Poppins',sans-serif;
+        }
+		
+		@keyframes marquee {
+			from {
+			transform: translateX(0%);
+			}
+
+			to {
+				transform: translateX(-50%);
+			}
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <nav class="flex flex-row justify-between items-center py-2 relative">
+
+           
+
+            <div class="flex items-center justify-between w-full md:w-auto gap-3">
+
+                <img src= "img/MediNova-logo.png" alt="MediNova Logo" class="h-16 md:h-24 w-auto">
+      
+            </div>
+
+           
+
+            <ul class="hidden md:flex flex-wrap justify-center gap-8 mt-5 lg:mt-0">
+
+                <li><a href="../index.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Home</a></li>   
+                <li><a href="about.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">About</a></li>    
+                <li><a href="departments.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Departments</a></li>   
+                <li><a href="doctors.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Doctors</a></li> 
+                <li><a href="services.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Services</a></li>				
+                <li><a href="contact.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Contact</a></li> 
+			    <button><a href="appointment.html" class="mt-5 lg:mt-0 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3 rounded-full duration-300 shadow-lg">Book Appointment</a></button>
+				
+            </ul>
+            
+			
+		    <!--3 lines-hamburger-->
+			<label for="menuToggle" class ="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			</label>
+			
+			
+            
+			
+        </nav>
+		<!--peer element's state for sm devices-->
+			<input type = "checkbox" id="menuToggle" class="hidden peer"/>
+			<div class="hidden peer-checked:block md:hidden bg-white px-6 pb-4">
+			<ul class="flex flex-col space-y-3 text-blue-800 font-medium">
+			<li><a href = "../index.html" class="block hover:text-sky-600">Home</a></li>
+			<li><a href = "about.html" class="block hover:text-sky-600">About</a></li>
+			<li><a href = "departments.html" class="block hover:text-sky-600">Departments</a></li>
+			<li><a href = "doctors.html" class="block hover:text-sky-600">Doctors</a></li>
+			<li><a href = "services.html" class="block hover:text-sky-600">Services</a></li>
+			<li><a href = "contact.html" class="block hover:text-sky-600">Contact</a></li>
+			</ul>
+			<button><a href="appointment.html" class="inline-block mt-5 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3  rounded-full duration-300 shadow-lg">Book Appointment </a></button>
+			</div>
+		
+		
+
+    </div>
+
+</header>
+
+<!-- Doctors Hero Section -->
+<section class="relative overflow-hidden bg-gradient-to-r from-sky-700 via-sky-600 to-cyan-500">
+
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 left-20 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-cyan-200 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-16 py-20">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Content -->
+            <div>
+
+                <span class="inline-block px-4 py-2 bg-white/20 text-white rounded-full text-sm font-semibold tracking-wide mb-5">
+                    👨‍⚕️ Trusted Healthcare Professionals
+                </span>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                    Meet Our
+                    <span class="text-cyan-200">
+                        Expert Doctors
+                    </span>
+                </h1>
+
+                <p class="text-sky-100 text-lg leading-relaxed mb-8">
+                    Our team of highly experienced specialists is committed to
+                    delivering compassionate, personalized, and advanced medical
+                    care across multiple specialties. Your health is in trusted hands.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <button>
+						<a href="#doctors"
+							class="bg-white text-sky-700 hover:bg-sky-100 px-7 py-3 rounded-lg font-semibold transition duration-300 shadow-lg">
+							Explore Doctors
+						</a>
+					</button>
+
+                    <button>
+						<a href="appointment.html"
+							class="border-2 border-white text-white hover:bg-white hover:text-sky-700 px-7 py-3 rounded-lg font-semibold transition duration-300">
+							Book Appointment
+						</a>
+					</button>
+
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-3 gap-6 mt-12">
+
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">75+</h3>
+                        <p class="text-sky-100 text-sm mt-1">Expert Doctors</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">20+</h3>
+                        <p class="text-sky-100 text-sm mt-1">Departments</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">24/7</h3>
+                        <p class="text-sky-100 text-sm mt-1">Emergency Care</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="relative">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyROHFMhv6HN2dIBPsA0ji_gWKbrnwSCIEkA9ZqZebw&s=10"
+                    alt="Doctors Team"
+                    class="rounded-3xl shadow-2xl w-full object-cover">
+
+                <!-- Floating Card -->
+                <div class="absolute -bottom-6 left-20 bg-white rounded-2xl shadow-xl px-6 py-5">
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-14 h-14 rounded-full bg-sky-100 flex items-center justify-center text-3xl">
+                            <i class="fas fa-stethoscope text-blue-800"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-gray-800">
+                                Certified Specialists
+                            </h4>
+                            <p class="text-gray-500 text-sm">
+                                Dedicated to Exceptional Patient Care
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Search & Filter Doctors -->
+<section class="bg-white py-16 px-6 lg:px-16" id="doctors">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+
+            <span class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                Find Your Specialist
+            </span>
+
+            <h2 class="text-4xl font-bold text-gray-800">
+                Search for the Right Doctor
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-3xl mx-auto">
+                Easily search for experienced specialists by name, department, or availability to find the best healthcare professional for your needs.
+            </p>
+
+        </div>
+
+        <!-- Search Box -->
+        <div class="bg-gray-50 rounded-3xl shadow-lg p-8">
+
+            <div class="grid lg:grid-cols-4 gap-5">
+
+                <!-- Search -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Doctor Name
+                    </label>
+
+                    
+                     
+					<select
+					id="doctorSearch"
+					class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+
+					<option value="">Select Doctor</option>
+
+					<option>Dr. James Wilson</option>
+					<option>Dr. Emily Carter</option>
+					<option>Dr. Michael Brown</option>
+					<option>Dr. Sarah Johnson</option>
+					<option>Dr. David Anderson</option>
+					<option>Dr. Olivia Martinez</option>
+					<option>Dr. William Harris</option>
+					<option>Dr. Sophia Walker</option>
+					<option>Dr. Daniel Thompson</option>
+					<option>Dr. Victoria Hall</option>
+					<option>Dr. Jonathan Reed</option>
+					<option>Dr. Christopher Lee</option>
+					<option>Dr. Benjamin Clark</option>
+					<option>Dr. Charlotte Lewis</option>
+					<option>Dr. Ethan Scott</option>
+					<option>Dr. Henry Collins</option>
+					<option>Dr. Olivia Bennett</option>
+					<option>Dr. Daniel Anderson</option>
+					<option>Dr. Sophia Mitchell</option>
+					<option>Dr. Ethan Parker</option>
+
+                 </select>
+				</div>
+
+                <!-- Department -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Department
+                    </label>
+
+                    <select id="department" 
+					class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+                          
+                        <option>Select Department</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Orthopedics</option>
+                        <option>Pediatrics</option>
+                        <option>Ophthalmology</option>
+						<option>Women's Health</option>
+						<option>Dental Care</option>
+						<option>Pulmonology</option>
+                        <option>General Medicine</option>
+						<option>Pathology</option>
+						<option>Dermatology</option>
+						<option>Oncology</option>
+						<option>Emergency Medicine</option>
+						
+
+                    </select>
+                </div>
+
+                <!-- Availability -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Availability
+                    </label>
+
+                    <select  id="availability" class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+
+                        <option>Any Time</option>
+                        <option>Available Today</option>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+
+                    </select>
+                </div>
+
+                <!-- Button -->
+                <div class="flex items-end">
+
+                    <button 
+					     type="button"
+                         onclick="searchDoctors()"
+                        class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 rounded-xl transition duration-300">
+                        Search Doctors
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Popular Departments -->
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+
+            <span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Cardiology
+            </span>
+
+            <span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Neurology
+            </span>
+
+            <span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Orthopedics
+            </span>
+
+            <span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Pediatrics
+            </span>
+
+            <span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Ophthalmology
+            </span>
+			
+			<span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Women's Health
+            </span>
+			
+			<span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Dental Care
+            </span>
+			
+			<span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Pulmonology
+            </span>
+
+            <span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                General Medicine
+            </span>
+			
+			<span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Pathology
+            </span>
+			
+			<span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Dermatology
+            </span>
+			
+			<span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Oncology
+            </span>
+			
+			<span class="px-5 py-2 bg-sky-100 text-sky-700 rounded-full hover:bg-sky-600 hover:text-white cursor-pointer transition">
+                Emergency Medicine
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Featured Doctors -->
+<section class="bg-gray-50 py-20 px-6 lg:px-16">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+
+            <span
+                class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                Our Medical Experts
+            </span>
+
+            <h2 class="text-4xl font-bold text-gray-800">
+                Meet Our Experienced Specialists
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-3xl mx-auto">
+                Our team consists of highly qualified doctors dedicated to providing compassionate care,
+                accurate diagnosis, and advanced treatment across multiple specialties.
+            </p>
+
+        </div>
+
+        <!-- Doctors Grid -->
+        <div id="doctorCards" class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+            <!-- Doctor 1 -->
+            <div 
+                class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvcFuNP7OflT-VteUU3eNjHrZOXmkaLA8RYin1dzh3A&s=10"
+                        alt="Dr. James Wilson"
+                        class="w-full h-90 object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Dr. James Wilson
+                    </h3>
+
+                    <p class="text-sky-600 font-semibold mt-1">
+                        Senior Cardiologist
+                    </p>
+
+                    <div class="flex items-center mt-3 text-yellow-500">
+                        ★★★★★
+                        <span class="text-gray-500 text-sm ml-2">(4.9)</span>
+                    </div>
+
+                    <div class="mt-5 space-y-2 text-gray-600 text-sm">
+
+                        <p>🎓 MD, DM Cardiology</p>
+
+                        <p>💼 18+ Years Experience</p>
+
+                        <p>🩺 Heart & Vascular Care</p>
+
+                    </div>
+
+                    <div class="flex gap-3 mt-6">
+                        
+                        <a href="appointment.html"
+                            class="flex-1 text-center bg-sky-600 hover:bg-sky-700 text-white py-2 rounded-xl font-medium transition">
+                            Book
+                        </a>
+
+                        <a href="doctors/Dr. James Wilson-profile.html"
+                            class="flex-1 text-center border border-sky-600 text-sky-600 hover:bg-sky-50 py-2 rounded-xl font-medium transition">
+                            Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Doctor 2 -->
+            <div
+                class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhIXnYAxyy4-jNka74E1UZiUYGMAYBU_9SbNpZ3XZ0xQ&s=10"
+                        alt="Dr. Emily Carter"
+                        class="w-full h-90 object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Dr. Emily Carter
+                    </h3>
+
+                    <p class="text-sky-600 font-semibold mt-1">
+                        Consultant Neurologist
+                    </p>
+
+                    <div class="flex items-center mt-3 text-yellow-500">
+                        ★★★★★
+                        <span class="text-gray-500 text-sm ml-2">(4.8)</span>
+                    </div>
+
+                    <div class="mt-5 space-y-2 text-gray-600 text-sm">
+
+                        <p>🎓 MD, DM Neurology</p>
+
+                        <p>💼 15+ Years Experience</p>
+
+                        <p>🧠 Brain & Spine Specialist</p>
+
+                    </div>
+
+                    <div class="flex gap-3 mt-6">
+
+                        <a href="appointment.html"
+                            class="flex-1 text-center bg-sky-600 hover:bg-sky-700 text-white py-2 rounded-xl font-medium transition">
+                            Book
+                        </a>
+
+                        <a href="doctors/Dr. Emily Carter-profile.html"
+                            class="flex-1 text-center border border-sky-600 text-sky-600 hover:bg-sky-50 py-2 rounded-xl font-medium transition">
+                            Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Doctor 3 -->
+            <div
+                class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAJzto3G7SkJkyIqUPJfA7YkzMknBKNMqOQFfMsaZUFQ&s=10"
+                        alt="Dr. Michael Brown"
+                        class="w-full h-90 object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Dr. Michael Brown
+                    </h3>
+
+                    <p class="text-sky-600 font-semibold mt-1">
+                        Orthopedic Surgeon
+                    </p>
+
+                    <div class="flex items-center mt-3 text-yellow-500">
+                        ★★★★★
+                        <span class="text-gray-500 text-sm ml-2">(5.0)</span>
+                    </div>
+
+                    <div class="mt-5 space-y-2 text-gray-600 text-sm">
+
+                        <p>🎓 MS Orthopedics</p>
+
+                        <p>💼 20+ Years Experience</p>
+
+                        <p>🦴 Joint Replacement Expert</p>
+
+                    </div>
+
+                    <div class="flex gap-3 mt-6">
+
+                        <a href="appointment.html"
+                            class="flex-1 text-center bg-sky-600 hover:bg-sky-700 text-white py-2 rounded-xl font-medium transition">
+                            Book
+                        </a>
+
+                        <a href="doctors/Dr. Michael Brown-profile.html"
+                            class="flex-1 text-center border border-sky-600 text-sky-600 hover:bg-sky-50 py-2 rounded-xl font-medium transition">
+                            Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Doctor 4 -->
+            <div
+                class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WtpWnRZ9J3yPR1yKfUhKS1xHIlnqr9tDwXaMWZc2lQ&s=10"
+                        alt="Dr. Sarah Johnson"
+                        class="w-full h-90 object-cover">
+
+                </div>
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Dr. Sarah Johnson
+                    </h3>
+
+                    <p class="text-sky-600 font-semibold mt-1">
+                        Pediatric Specialist
+                    </p>
+
+                    <div class="flex items-center mt-3 text-yellow-500">
+                        ★★★★★
+                        <span class="text-gray-500 text-sm ml-2">(4.9)</span>
+                    </div>
+
+                    <div class="mt-5 space-y-2 text-gray-600 text-sm">
+
+                        <p>🎓 MD Pediatrics</p>
+
+                        <p>💼 12+ Years Experience</p>
+
+                        <p>👶 Child Healthcare Expert</p>
+
+                    </div>
+
+                    <div class="flex gap-3 mt-6">
+
+                        <a href="appointment.html"
+                            class="flex-1 text-center bg-sky-600 hover:bg-sky-700 text-white py-2 rounded-xl font-medium transition">
+                            Book
+                        </a>
+
+                        <a href="doctors/Dr. Sarah Johnson-profile.html"
+                            class="flex-1 text-center border border-sky-600 text-sky-600 hover:bg-sky-50 py-2 rounded-xl font-medium transition">
+                            Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+			<!--doctor-5-->
+			<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUY9z1_xLbG6cSMVvm8PweKy1rRNGOCqztwSNHWWWEgA&s=10"
+				alt="Dr. David Anderson"
+				class="w-full h-72 object-cover">
+
+			<div class="p-6">
+
+				<h3 class="text-xl font-bold text-gray-800">
+					Dr. David Anderson
+				</h3>
+
+				<p class="text-sky-600 font-semibold mt-1">
+					Dental Surgeon
+				</p>
+
+				<div class="flex items-center mt-3 text-yellow-500">
+					★★★★★
+					<span class="text-gray-500 text-sm ml-2">(4.9)</span>
+				</div>
+
+				<div class="mt-5 space-y-2 text-gray-600 text-sm">
+
+					<p>🎓 BDS, MDS (Oral & Maxillofacial Surgery)</p>
+
+					<p>💼 14+ Years Experience</p>
+
+					<p>🦷 Dental Implants & Oral Surgery</p>
+
+				</div>
+
+				<div class="flex gap-3 mt-6">
+
+					<a href="appointment.html"
+						class="flex-1 text-center bg-sky-600 hover:bg-sky-700 text-white py-2 rounded-xl font-medium transition">
+						Book
+					</a>
+
+					<a href="doctors/Dr. David Anderson-profile.html"
+						class="flex-1 text-center border border-sky-600 text-sky-600 hover:bg-sky-50 py-2 rounded-xl font-medium transition">
+						Profile
+					</a>
+
+				</div>
+
+			</div>
+
+		 </div>
+		 
+		<!--doctor-6-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYLA3fqSoCMvar6BTjxbw8X3_EDVvvJxQYmQmBgtZcyw&s=10" alt="Dr. Olivia Martinez" class="w-full h-72 object-cover">
+
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Olivia Martinez</h3>
+		<p class="text-sky-600 font-semibold mt-1">Gynecologist & Obstetrician</p>
+
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.8)</span></div>
+
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MS, DGO</p>
+		<p>💼 17+ Years Experience</p>
+		<p>🤰 Women's Health & Pregnancy Care</p>
+		</div>
+
+		<div class="flex gap-3 mt-6">
+		<a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a>
+		<a href="doctors/Dr. Olivia Martinez-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a>
+		</div>
+		</div>
+		</div>
+		
+		<!--doctor-7-->
+		
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSmpQDLf4Y0yN9WIoSeuLx4tpsnS8H8wCrr9Chj-mtfw&s=10" alt="Dr. William Harris" class="w-full h-72 object-cover">
+
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. William Harris</h3>
+		<p class="text-sky-600 font-semibold mt-1">General Physician</p>
+
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.9)</span></div>
+
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MD Internal Medicine</p>
+		<p>💼 19+ Years Experience</p>
+		<p>🩺 Preventive & Adult Healthcare</p>
+		</div>
+
+		<div class="flex gap-3 mt-6">
+		<a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a>
+		<a href="doctors/Dr. William Harris-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a>
+		</div>
+		</div>
+		</div>
+		
+		<!--doctor-8-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRErw8NksqoyCX1KNYu1qMbtxfpFvODhMEZakGSqLBJfw&s=10" alt="Dr. Sophia Walker" class="w-full h-72 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Sophia Walker</h3>
+		<p class="text-sky-600 font-semibold mt-1">ENT Specialist</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.8)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MS ENT</p>
+		<p>💼 13+ Years Experience</p>
+		<p>👂 Ear, Nose & Throat Care</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Sophia Walker-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		<!--doctor-9-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh27Of5jz-dkXRADxMzO_508c4V7jeazGZ-NfvoxRAbQ&s=10" class="w-full h-90 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Daniel Thompson</h3>
+		<p class="text-sky-600 font-semibold mt-1">Ophthalmologist</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(5.0)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MS Ophthalmology</p>
+		<p>💼 16+ Years Experience</p>
+		<p>👁 Vision & Cataract Care</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Daniel Thompson-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		<!--doctor-10-->
+		
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlJxkdvT92ogdE96Uiyjbnm-JmcVSUmK10190fCHwRQ&s=10" class="w-full h-90 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Victoria Hall</h3>
+		<p class="text-sky-600 font-semibold mt-1">Anesthesiology</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(5.0)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MD Anesthesiology</p>
+		<p>💼 16+ Years Experience</p>
+		<p>💉 Surgical & Pain Management</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Victoria Hall-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		
+		<!--doctor-11-->
+		
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwkSn3uY1NuhgR598Nv01carHSO3n3EY5deV7Ht4BdQ&s=10" class="w-full h-90 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Jonathan Reed</h3>
+		<p class="text-sky-600 font-semibold mt-1">Emergency Medicine</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(5.0)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MD Emergency Medicine</p>
+		<p>💼 15+ Years Experience</p>
+		<p>🚑 Trauma & Critical Care</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Jonathan Reed-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		<!--doctor-12-->
+		
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXHVidB_Xle3S69O0vzVVlGEW_3vfFt1BeusFjBZdpQ&s=10" class="w-full h-90 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Christopher Lee</h3>
+		<p class="text-sky-600 font-semibold mt-1">Oncologist</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(5.0)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MD Oncology</p>
+		<p>💼 21+ Years Experience</p>
+		<p>🎗 Cancer Diagnosis & Treatment</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Christopher Lee-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		
+		<!--doctor-13-->
+		
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr-ZkbhTnFGV95JCj7nhN2u8Ym0Ja1XL8uMGyrE1BYSA&s=10" class="w-full h-72 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Benjamin Clark</h3>
+		<p class="text-sky-600 font-semibold mt-1">Pulmonologist</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(5.0)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MD Pulmonary Medicine</p>
+		<p>💼 15+ Years Experience</p>
+		<p>🫁 Lung & Respiratory Care</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Benjamin Clark-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		<!--doctor-14-->
+		
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cuialg1lTAPQoL2pBN-gkGaLyd9FXLwsMVyiqS4F4Q&s=10" class="w-full h-72 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Charlotte Lewis</h3>
+		<p class="text-sky-600 font-semibold mt-1">Gastroenterologist</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(5.0)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 DM Gastroenterology</p>
+		<p>💼 18+ Years Experience</p>
+		<p>🍽 Digestive & Liver Care</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Charlotte Lewis-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		<!--doctor-15-->
+		
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+		<img src="https://media.licdn.com/dms/image/v2/D4E03AQGbhZqq-vuSmg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1668634858574?e=2147483647&v=beta&t=lvU34UvcZxs6ant7Bf5WqsltWZw9_Dez0Sd3tp3xNlc" class="w-full h-72 object-cover">
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Ethan Scott</h3>
+		<p class="text-sky-600 font-semibold mt-1">Endocrinologist</p>
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(5.0)</span></div>
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 DM Endocrinology</p>
+		<p>💼 14+ Years Experience</p>
+		<p>🧬 Diabetes & Hormonal Disorders</p>
+		</div>
+		<div class="flex gap-3 mt-6"><a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a><a href="doctors/Dr. Ethan Scott-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a></div>
+		</div>
+		</div>
+		
+		<!--doctor-16-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsICqSGH3mNcPZXk4rqBWB6sboFGDy3zzjqr2wmjN7iA&s" alt="Dr. Henry Collins" class="w-full h-72 object-cover">
+
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Henry Collins</h3>
+		<p class="text-sky-600 font-semibold mt-1">Rheumatology</p>
+
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.8)</span></div>
+
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MD, DM Rheumatology</p>
+		<p>💼 15+ Years Experience</p>
+		<p>🦴 Arthritis, Autoimmune & Joint Disorders</p>
+		</div>
+
+		<div class="flex gap-3 mt-6">
+		<a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a>
+		<a href="doctors/Dr. Henry Collins-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a>
+		</div>
+		</div>
+		</div>
+		
+		<!--doctor-17-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+		<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Dr. Olivia Bennett" class="w-full h-72 object-cover">
+
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Olivia Bennett</h3>
+		<p class="text-sky-600 font-semibold mt-1">Neurology</p>
+
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.9)</span></div>
+
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MD, DM Neurology</p>
+		<p>💼 14+ Years Experience</p>
+		<p>🧠 Migraine, Epilepsy & Neurological Disorders</p>
+		</div>
+
+		<div class="flex gap-3 mt-6">
+		<a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a>
+		<a href="doctors/Dr. Olivia Bennett-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a>
+		</div>
+		</div>
+		</div>
+
+
+		<!--doctor-18-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+		<img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80" alt="Dr. Daniel Anderson" class="w-full h-72 object-cover">
+
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Daniel Anderson</h3>
+		<p class="text-sky-600 font-semibold mt-1">Orthopedics</p>
+
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.8)</span></div>
+
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MBBS, MS Orthopedics</p>
+		<p>💼 17+ Years Experience</p>
+		<p>🦴 Fractures, Sports Injuries & Joint Replacement</p>
+		</div>
+
+		<div class="flex gap-3 mt-6">
+		<a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a>
+		<a href="doctors/Dr. Daniel Anderson-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a>
+		</div>
+		</div>
+		</div>
+
+
+		<!--doctor-19-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+		<img src="img\Dr.sophia Mitchell.jpg" alt="Dr. Sophia Mitchell" class="w-full h-72 object-cover">
+
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Sophia Mitchell</h3>
+		<p class="text-sky-600 font-semibold mt-1">Dermatology</p>
+
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.7)</span></div>
+
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MBBS, MD Dermatology</p>
+		<p>💼 12+ Years Experience</p>
+		<p>🧴 Acne, Skin Allergies & Hair Disorders</p>
+		</div>
+
+		<div class="flex gap-3 mt-6">
+		<a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a>
+		<a href="doctors/Dr. Sophia Mitchell-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a>
+		</div>
+		</div>
+		</div>
+
+
+		<!--doctor-20-->
+		<div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+		<img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80" alt="Dr. Ethan Parker" class="w-full h-72 object-cover">
+
+		<div class="p-6">
+		<h3 class="text-xl font-bold text-gray-800">Dr. Ethan Parker</h3>
+		<p class="text-sky-600 font-semibold mt-1">Pulmonology</p>
+
+		<div class="flex items-center mt-3 text-yellow-500">★★★★★ <span class="text-gray-500 text-sm ml-2">(4.8)</span></div>
+
+		<div class="mt-5 space-y-2 text-gray-600 text-sm">
+		<p>🎓 MBBS, MD Pulmonology</p>
+		<p>💼 13+ Years Experience</p>
+		<p>🫁 Asthma, COPD & Respiratory Disorders</p>
+		</div>
+
+		<div class="flex gap-3 mt-6">
+		<a href="appointment.html" class="flex-1 text-center bg-sky-600 text-white py-2 rounded-xl">Book</a>
+		<a href="doctors/Dr. Ethan Parker-profile.html" class="flex-1 text-center border border-sky-600 text-sky-600 py-2 rounded-xl">Profile</a>
+		</div>
+		</div>
+		</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Why Patients Trust Our Doctors -->
+<section class="bg-gray-50 py-20 px-6 lg:px-16">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+
+            <span class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                Why Choose Our Doctors
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+                Why Patients Trust Our Doctors
+            </h2>
+
+            <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-8">
+                Our dedicated team of medical professionals combines expertise,
+                compassion, and innovation to deliver exceptional healthcare and
+                personalized treatment for every patient.
+            </p>
+
+        </div>
+
+        <!-- Top Features -->
+        <div class="grid md:grid-cols-3 gap-8 mb-14">
+
+            <!-- Card -->
+            <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 text-center">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-sky-100 flex items-center justify-center text-3xl mb-5">
+                    👨‍⚕️
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800">
+                    Expert Specialists
+                </h3>
+
+                <p class="text-gray-600 mt-3 leading-7">
+                    Highly qualified doctors with years of experience across
+                    multiple medical specialties.
+                </p>
+
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 text-center">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-red-100 flex items-center justify-center text-3xl mb-5">
+                    ❤️
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800">
+                    Patient-Centered Care
+                </h3>
+
+                <p class="text-gray-600 mt-3 leading-7">
+                    Every patient receives personalized treatment plans designed
+                    for comfort, recovery, and long-term wellness.
+                </p>
+
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 text-center">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-green-100 flex items-center justify-center text-3xl mb-5">
+                    🩺
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800">
+                    Advanced Treatment
+                </h3>
+
+                <p class="text-gray-600 mt-3 leading-7">
+                    Modern medical technologies and evidence-based treatments
+                    ensure accurate diagnosis and effective care.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Center Image -->
+        <div class="relative mb-14">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjlRv19PmhzTX-y5CbaxgHVpXNSFxVeaF6Ic-ow7WTOw&s=10"
+                alt="Medical Team"
+                class="w-full max-w-5xl mx-auto rounded-3xl shadow-2xl">
+
+            <!-- Floating Badge -->
+            <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white shadow-xl rounded-2xl px-8 py-5 border">
+
+                <div class="flex items-center gap-4">
+
+                    <div class="w-14 h-14 rounded-full bg-sky-100 flex items-center justify-center text-3xl">
+                        🏥
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Trusted by Thousands of Patients
+                        </h3>
+
+                        <p class="text-gray-500">
+                            Compassion • Expertise • Excellence
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Features -->
+        <div class="grid md:grid-cols-3 gap-8 mt-20">
+
+            <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 text-center">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-yellow-100 flex items-center justify-center text-3xl mb-5">
+                    🤝
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800">
+                    Collaborative Care
+                </h3>
+
+                <p class="text-gray-600 mt-3 leading-7">
+                    Specialists work together to deliver coordinated healthcare
+                    for better treatment outcomes.
+                </p>
+
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 text-center">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-indigo-100 flex items-center justify-center text-3xl mb-5">
+                    📚
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800">
+                    Continuous Learning
+                </h3>
+
+                <p class="text-gray-600 mt-3 leading-7">
+                    Our doctors regularly update their expertise through
+                    research, training, and international medical conferences.
+                </p>
+
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-300 text-center">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-cyan-100 flex items-center justify-center text-3xl mb-5">
+                    🌐
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-800">
+                    Modern Diagnostics
+                </h3>
+
+                <p class="text-gray-600 mt-3 leading-7">
+                    Advanced laboratory and imaging facilities help ensure
+                    faster diagnosis and more precise treatment planning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Patient Testimonials -->
+<section class="py-20 bg-gray-50 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 text-center mb-14">
+
+        <span class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold">
+            Patient Testimonials
+        </span>
+
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mt-5">
+            Trusted by Thousands of Patients 
+        </h2>
+
+        <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-8">
+            Real experiences shared by patients who received compassionate care
+            from our experienced medical specialists.
+        </p>
+
+    </div>
+
+    <!-- Marquee -->
+    <div class="relative overflow-hidden">
+
+        <div class="flex gap-6 animate-[marquee_35s_linear_infinite] w-max">
+
+            <!-- Card 1 -->
+            <div class="w-96 bg-white rounded-3xl shadow-lg p-8 flex-shrink-0">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RcFZxw8Fx2HuESs4fkohXmv7_63VC6UmJrxdtQYPDA&s=10"
+                        class="w-16 h-16 rounded-full object-cover">
+
+                    <div>
+
+                        <h3 class="font-bold text-lg">
+                            Robert Williams
+                        </h3>
+
+                        <p class="text-sky-600 text-sm">
+                            Cardiology Patient
+                        </p>
+
+                        <div class="text-yellow-500">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-6 text-gray-600 leading-7 italic">
+                    "Dr. James Wilson provided outstanding treatment and made me
+                    feel confident throughout my recovery."
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="w-96 bg-white rounded-3xl shadow-lg p-8 flex-shrink-0">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9EjCtpVPILjt7eNgNNojZ3jbK9Ai1ZUtzD8VD5t3iCg&s=10"
+                        class="w-16 h-16 rounded-full object-cover">
+
+                    <div>
+
+                        <h3 class="font-bold text-lg">
+                            Jennifer Smith
+                        </h3>
+
+                        <p class="text-sky-600 text-sm">
+                            Orthopedic Patient
+                        </p>
+
+                        <div class="text-yellow-500">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-6 text-gray-600 leading-7 italic">
+                    "Excellent orthopedic care from consultation to recovery. I
+                    highly recommend MediNova."
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="w-96 bg-white rounded-3xl shadow-lg p-8 flex-shrink-0">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS702bN304RBRhWYydJCiJIztMGwB-U9shRJW5ZwsBngA&s=10"
+                        class="w-16 h-16 rounded-full object-cover">
+
+                    <div>
+
+                        <h3 class="font-bold text-lg">
+                            Emily Johnson
+                        </h3>
+
+                        <p class="text-sky-600 text-sm">
+                            Pediatrics Patient
+                        </p>
+
+                        <div class="text-yellow-500">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-6 text-gray-600 leading-7 italic">
+                    "The pediatric team treated my daughter with incredible care
+                    and kindness. Thank you!"
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+            <div class="w-96 bg-white rounded-3xl shadow-lg p-8 flex-shrink-0">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK5XxljWRFCT2-uLFKM-4FAWE7Qau2oaSw2k8Ih63rw&s=10"
+                        class="w-16 h-16 rounded-full object-cover">
+
+                    <div>
+
+                        <h3 class="font-bold text-lg">
+                            Daniel Martinez
+                        </h3>
+
+                        <p class="text-sky-600 text-sm">
+                            Neurology Patient
+                        </p>
+
+                        <div class="text-yellow-500">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-6 text-gray-600 leading-7 italic">
+                    "Professional doctors, friendly staff, and excellent follow-up
+                    care throughout my treatment."
+                </p>
+
+            </div>
+			
+			<!-- Card 5 -->
+			<div class="w-96 bg-white rounded-3xl shadow-lg p-8 flex-shrink-0">
+
+				<div class="flex items-center gap-4">
+
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcZAFonTi4y47BcovCmVXl5ZHcRVbueUh5sWgWODrzAg&s=10"
+						class="w-16 h-16 rounded-full object-cover">
+
+					<div>
+
+						<h3 class="font-bold text-lg">
+							Sophia Anderson
+						</h3>
+
+						<p class="text-sky-600 text-sm">
+							Dental Surgery Patient
+						</p>
+
+						<div class="text-yellow-500">
+							★★★★★
+						</div>
+
+					</div>
+
+				</div>
+
+				<p class="mt-6 text-gray-600 leading-7 italic">
+					"The dental team made my treatment comfortable and stress-free. I truly appreciate their professionalism and gentle care."
+				</p>
+
+			</div>
+
+            <!-- Duplicate cards for seamless loop -->
+
+            <div class="w-96 bg-white rounded-3xl shadow-lg p-8 flex-shrink-0">
+                <div class="flex items-center gap-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RcFZxw8Fx2HuESs4fkohXmv7_63VC6UmJrxdtQYPDA&s=10"
+                        class="w-16 h-16 rounded-full object-cover">
+                    <div>
+                        <h3 class="font-bold text-lg">Robert Williams</h3>
+                        <p class="text-sky-600 text-sm">Cardiology Patient</p>
+                        <div class="text-yellow-500">★★★★★</div>
+                    </div>
+                </div>
+                <p class="mt-6 text-gray-600 leading-7 italic">
+                    "Dr. James Wilson provided outstanding treatment and made me
+                    feel confident throughout my recovery."
+                </p>
+            </div>
+			
+
+            <div class="w-96 bg-white rounded-3xl shadow-lg p-8 flex-shrink-0">
+                <div class="flex items-center gap-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9EjCtpVPILjt7eNgNNojZ3jbK9Ai1ZUtzD8VD5t3iCg&s=10"
+                        class="w-16 h-16 rounded-full object-cover">
+                    <div>
+                        <h3 class="font-bold text-lg">Jennifer Smith</h3>
+                        <p class="text-sky-600 text-sm">Orthopedic Patient</p>
+                        <div class="text-yellow-500">★★★★★</div>
+                    </div>
+                </div>
+                <p class="mt-6 text-gray-600 leading-7 italic">
+                    "Excellent orthopedic care from consultation to recovery. I
+                    highly recommend MediNova."
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Book Consultation CTA -->
+<section class="relative py-20 px-6 lg:px-16 overflow-hidden">
+
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-r from-sky-700 via-sky-600 to-cyan-500"></div>
+
+    <!-- Decorative Circles -->
+    <div class="absolute -top-24 -left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-24 -right-20 w-80 h-80 bg-cyan-200/20 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-6xl mx-auto text-center">
+
+        <span class="inline-block bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-5">
+            Schedule Your Consultation
+        </span>
+
+        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+            Ready to Meet Our Medical Experts?
+        </h2>
+
+        <p class="text-sky-100 text-lg max-w-3xl mx-auto mt-6 leading-8">
+            Whether you need a routine check-up, a specialist consultation, or a second opinion,
+            our experienced doctors are here to provide personalized care for you and your family.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap justify-center gap-5 mt-10">
+
+            <button>
+			<a href="appointment.html"
+                class="bg-white text-sky-700 hover:bg-sky-100 px-8 py-4 rounded-xl font-semibold shadow-lg transition duration-300">
+                📅 Book Appointment
+            </a>
+			</button>
+
+            <button>
+			<a href="tel:+911234567890"
+                class="border-2 border-white text-white hover:bg-white hover:text-sky-700 px-8 py-4 rounded-xl font-semibold transition duration-300">
+                <i class="fa-solid fa-phone pr-2 text-red-500"></i>Call Now
+            </a>
+			</button>
+			
+            <button>
+            <a href="contact.html"
+                class="bg-sky-800/30 border border-white/30 text-white hover:bg-white hover:text-sky-700 px-8 py-4 rounded-xl font-semibold transition duration-300">
+                💬 Contact Us
+            </a>
+			</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Frequently Asked Questions -->
+<section class="bg-white py-20 px-6 lg:px-16">
+
+    <div class="max-w-5xl mx-auto">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+
+            <span class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                Frequently Asked Questions
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+                Have Questions? We're Here to Help
+            </h2>
+
+            <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-8">
+                Find answers to some of the most common questions about appointments, consultations, and our medical services.
+            </p>
+
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-5">
+
+            <!-- FAQ 1 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    How do I book an appointment?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    You can easily book an appointment online through our website, call our reception desk, or visit the hospital for in-person scheduling.
+                </p>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    Can I choose a specific doctor?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    Yes. During the appointment process, you can select your preferred specialist based on department and availability.
+                </p>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    What documents should I bring for my consultation?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    Please bring a valid ID, previous medical records, prescriptions, diagnostic reports, and your health insurance details if applicable.
+                </p>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    Do you offer online consultations?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    Yes. Selected specialists provide secure online consultations for follow-up visits and non-emergency medical advice.
+                </p>
+            </details>
+
+            <!-- FAQ 5 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    How can I reschedule or cancel my appointment?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    You can reschedule or cancel your appointment by contacting our support team or managing your booking through our online appointment portal.
+                </p>
+            </details>
+
+            <!-- FAQ 6 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    What should I do in case of a medical emergency?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    For medical emergencies, immediately contact our 24/7 emergency department or call our emergency helpline for prompt assistance.
+                </p>
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+function searchDoctors() {
+
+    const doctor = document.getElementById("doctorSearch").value.toLowerCase();
+    const department = document.getElementById("department").value.toLowerCase();
+    const availability = document.getElementById("availability").value.toLowerCase();
+
+    const cards = document.querySelectorAll("#doctorCards > div");
+
+    cards.forEach(function(card) {
+
+        const text = card.innerText.toLowerCase();
+
+        const nameMatch =
+            doctor === "" || text.includes(doctor);
+
+        const departmentMatch =
+            department === "" ||
+            department === "select department" ||
+            text.includes(department);
+
+        const availabilityMatch =
+            availability === "" ||
+            availability === "any time" ||
+            text.includes(availability);
+
+        if (nameMatch && departmentMatch && availabilityMatch) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+<!-- ===================== FOOTER ===================== -->
+
+<footer class="bg-slate-900 text-white pt-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+
+            <!-- Column 1 -->
+
+            <div class="lg:col-span-2">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="img/MediNova-logo.png"
+                         class="h-20 rounded"
+                         alt="MediNova Logo">
+
+                    <div>
+
+                        <h2 class="text-3xl font-bold">
+                            MediNova
+                        </h2>
+
+                        <p class="tracking-[3px] uppercase text-sky-400 text-sm">
+                            Healthcare
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    MediNova is committed to delivering compassionate,
+                    high-quality healthcare with advanced medical
+                    technology and experienced professionals. Your
+                    health and well-being remain our highest priority.
+
+                </p>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Column 2 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Quick Links
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li><a href="index.html" class="hover:text-sky-400 duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-sky-400 duration-300">About Us</a></li>
+					<li><a href="departments.html" class="hover:text-sky-400 duration-300">Departments</a></li>
+				    <li><a href="doctors.html" class="hover:text-sky-400 duration-300">Doctors</a></li>
+                    <li><a href="services.html" class="hover:text-sky-400 duration-300">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-sky-400 duration-300">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 3 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Our Services
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li>Cardiology</li>
+                    <li>Neurology</li>
+                    <li>Orthopedics</li>
+                    <li>Pediatrics</li>					
+					<li>Ophthalmology</li>
+					<li>Women's Health</li>
+					<li>Dental Care</li>
+					<li>Pulmonology</li>
+                    <li>General Medicine</li>
+					<li>Pathology</li>
+					<li>Dermatology</li>
+					<li>Oncology</li>
+                    <li>Emergency Care</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 4 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Contact Info
+
+                </h3>
+
+                <div class="space-y-6 text-gray-300">
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-location-dot text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            123 Healthcare Avenue,
+                            Chennai,
+                            Tamil Nadu
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-phone text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            +91 98765 43210
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-envelope text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            info@medinova.com
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-regular fa-clock text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            Mon - Sat
+                            <br>
+
+                            8:00 AM - 9:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="border-t border-slate-700 mt-16">
+
+        <div class="max-w-7xl mx-auto px-6 py-6">
+
+                <p class="text-gray-400 text-center">
+                    © 2026 MediNova Healthcare.
+                    All Rights Reserved.
+                </p>
+
+        </div>
+
+    </div>
+
+</footer>

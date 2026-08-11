@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediNova | Caring Beyond Medicine</title>
+ 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#F8FBFF;
+        }
+
+        h1,h2,h3,h4,h5{
+            font-family:'Poppins',sans-serif;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <nav class="flex flex-row justify-between items-center py-2 relative">
+
+           
+
+            <div class="flex items-center justify-between w-full md:w-auto gap-3">
+
+                <img src= "img/MediNova-logo.png" alt="MediNova Logo" class="h-16 md:h-24 w-auto">
+      
+            </div>
+
+           
+
+            <ul class="hidden md:flex flex-wrap justify-center gap-8 mt-5 lg:mt-0">
+
+                <li><a href="index.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Home</a></li>   
+                <li><a href="about.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">About</a></li>    
+                <li><a href="departments.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Departments</a></li>   
+                <li><a href="doctors.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Doctors</a></li> 
+                <li><a href="services.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Services</a></li>				
+                <li><a href="contact.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Contact</a></li> 
+			    <button><a href="appointment.html" class="mt-5 lg:mt-0 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3 rounded-full duration-300 shadow-lg">Book Appointment</a></button>
+				
+            </ul>
+            
+			
+		    <!--3 lines-hamburger-->
+			<label for="menuToggle" class ="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			</label>
+			
+			
+            
+			
+        </nav>
+		<!--peer element's state for sm devices-->
+			<input type = "checkbox" id="menuToggle" class="hidden peer"/>
+			<div class="hidden peer-checked:block md:hidden bg-white px-6 pb-4">
+			<ul class="flex flex-col space-y-3 text-blue-800 font-medium">
+			<li><a href = "index.html" class="block hover:text-sky-600">Home</a></li>
+			<li><a href = "about.html" class="block hover:text-sky-600">About</a></li>
+			<li><a href = "departments.html" class="block hover:text-sky-600">Departments</a></li>
+			<li><a href = "doctors.html" class="block hover:text-sky-600">Doctors</a></li>
+			<li><a href = "services.html" class="block hover:text-sky-600">Services</a></li>
+			<li><a href = "contact.html" class="block hover:text-sky-600">Contact</a></li>
+			</ul>
+			<button><a href="appointment.html" class="inline-block mt-5 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3  rounded-full duration-300 shadow-lg">Book Appointment </a></button>
+			</div>
+		
+		
+
+    </div>
+
+</header>
+
+<!-- Contact Hero Section -->
+<section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+
+    <!-- Background Image -->
+    <img src="https://media.istockphoto.com/id/1512076927/photo/mid-adult-woman-talking-with-receptionist-at-the-reception-desk-of-the-dentists-office.jpg?b=1&s=612x612&w=0&k=20&c=uQAYImrVSPQEpj6flnL4ivEvUCIfUzman-jLXrRORoE="
+         alt="MediNova Hospital"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl">
+
+        <span class="inline-block bg-sky-100 text-sky-700 font-semibold px-4 py-2 rounded-full mb-5">
+            Contact MediNova
+        </span>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            We're Here to Help You <br>
+            Anytime You Need Us
+        </h1>
+
+        <p class="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+            Whether you have a medical question, need to schedule an appointment,
+            or require emergency assistance, our dedicated team is available to
+            support you 24/7.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+
+            <button>
+			<a href="#contact-form"
+               class="bg-sky-600 hover:bg-sky-700 text-white px-7 py-3 rounded-lg font-semibold transition duration-300 shadow-lg">
+                Send a Message
+            </a>
+			</button>
+
+            <button>
+			<a href="tel:+919876543210"
+               class="border-2 border-white text-white hover:bg-white hover:text-sky-700 px-7 py-3 rounded-lg font-semibold transition duration-300">
+                Call Emergency
+            </a>
+			</button>
+
+        </div>
+
+        
+        <div class="mt-10 text-gray-200 text-sm">
+            Home
+            <span class="mx-2">/</span>
+            <span class="text-sky-400">Contact Us</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Information Section -->
+<section class="py-20 bg-slate-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+
+            <span class="text-sky-600 font-semibold uppercase tracking-wider">
+                Contact Information
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+                Reach Out to MediNova Anytime
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                Whether you need emergency care, appointment assistance, or general
+                information, our team is always ready to help.
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Address -->
+            <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-8 text-center group">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-sky-100 flex items-center justify-center  transition">
+
+                    <i class="fa-solid fa-location-dot text-2xl" style="color: rgb(10, 134, 233); "></i>
+
+                </div>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3">
+                    Visit Us
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    123 Healthcare Avenue<br>
+                    Chennai, Tamil Nadu<br>
+                    India - 600001
+                </p>
+
+            </div>
+
+            <!-- Phone -->
+            <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-8 text-center group">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-sky-100 flex items-center justify-center transition">
+
+                    <i class="fa-solid fa-phone text-2xl" style="color: rgb(10, 134, 233);"></i>
+
+                </div>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3">
+                    Call Us
+                </h3>
+
+                <p class="text-gray-600">
+                    Emergency: +91 98765 43210
+                </p>
+
+                <p class="text-gray-600 mt-2">
+                    Reception: +91 91234 56789
+                </p>
+
+            </div>
+
+            <!-- Email -->
+            <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-8 text-center group">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-sky-100 flex items-center justify-center  transition">
+
+                    <i class="fa-solid fa-envelope text-2xl" style="color: rgb(10, 134, 233);"></i>
+
+                </div>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3">
+                    Email Us
+                </h3>
+
+                <p class="text-gray-600">
+                    support@medinova.com
+                </p>
+
+                <p class="text-gray-600 mt-2">
+                    appointments@medinova.com
+                </p>
+
+            </div>
+
+            <!-- Working Hours -->
+            <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-8 text-center group">
+
+                <div class="w-16 h-16 mx-auto rounded-full bg-sky-100 flex items-center justify-center  transition">
+
+                    <i class="fa-solid fa-clock text-2xl" style="color: rgb(10, 134, 233);"></i>
+
+                </div>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3">
+                    Working Hours
+                </h3>
+
+                <p class="text-gray-600">
+                    Mon - Sat : 8:00 AM - 9:00 PM
+                </p>
+
+                <p class="text-red-600 font-semibold mt-2">
+                    Emergency Care: 24/7
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact-form" class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- ================= Form ================= -->
+            <div>
+
+                <span class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full font-semibold mb-4">
+                    Get In Touch
+                </span>
+
+                <h2 class="text-4xl font-bold text-gray-900 mb-5">
+                    We'd Love to Hear From You
+                </h2>
+
+                <p class="text-gray-600 mb-8 leading-7">
+                    Have questions about our services or need assistance booking an
+                    appointment? Fill out the form below and our team will contact
+                    you as soon as possible.
+                </p>
+
+                <form id="contactForm" class="space-y-6">
+
+                    <!-- Name & Email -->
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <input
+                            type="text"
+                            placeholder="Full Name" required
+                            class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500">
+
+                        <input
+                            type="email"
+                            placeholder="Email Address" required
+                            class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500">
+
+                    </div>
+
+                    <!-- Phone & Department -->
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <input
+                            type="tel"
+                            placeholder="Phone Number" required
+                            class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500">
+
+                        <select name="department"
+                                required
+                            class="w-full border border-gray-300 text-gray-500 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500">
+
+                            <option value="" disabled selected >Select Department</option>
+                            <option>Cardiology</option>
+                            <option>Neurology</option>
+                            <option>Orthopedics</option>
+                            <option>Pediatrics</option>
+							<option>Ophthalmology</option>
+						    <option>Women's Health</option>
+						    <option>Dental Care</option>
+						    <option>Pulmonology</option>
+                            <option>General Medicine</option>
+							<option>Pathology</option>
+							<option>Dermatology</option>
+						    <option>Oncology</option>
+						    <option>Emergency Medicine</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Subject -->
+                    <input
+                        type="text"
+                        placeholder="Subject" required
+						
+                        class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-sky-500">
+
+                    <!-- Message -->
+                    <textarea
+                        rows="6"
+                        placeholder="Write your message..." required
+                        class="w-full border border-gray-300 rounded-xl px-5 py-4 resize-none focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+
+                    <button  type="submit"
+                        class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-8 py-4 rounded-xl transition duration-300 shadow-lg hover:shadow-xl">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- ================= Right Image ================= -->
+
+            <div class="relative">
+
+                <img
+                    src="https://media.istockphoto.com/id/1418999473/photo/doctors-comforting-disabled-elderly-patient.jpg?b=1&s=612x612&w=0&k=20&c=pUEEkCssZKxtB-xn2YtkrKwFyR6OToucQyBK9e0ZnVc="
+                    alt="Doctor assisting patient"
+                    class="rounded-3xl shadow-2xl w-full h-[650px] object-cover">
+
+              
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Appointment Process Section -->
+<section class="py-20 bg-slate-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Section Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+            <span class="text-sky-600 font-semibold uppercase tracking-widest">
+                Appointment Process
+            </span>
+
+            <h2 class="text-4xl font-bold text-gray-900 mt-3">
+                What Happens After You Contact Us?
+            </h2>
+
+            <p class="text-gray-600 mt-5 leading-8">
+                Our streamlined appointment process ensures you receive timely
+                assistance and the right medical care with minimal waiting.
+            </p>
+
+        </div>
+
+        <!-- Desktop -->
+        <div class="hidden lg:flex items-center justify-between">
+
+            <!-- STEP 1 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 w-64 text-center shadow-sm hover:shadow-lg transition">
+
+                <div class="w-14 h-14 mx-auto rounded-full bg-sky-600 text-white flex items-center justify-center text-xl font-bold mb-5">
+                    1
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">
+                    Submit Enquiry
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    Fill out the contact form with your enquiry and details.
+                </p>
+
+            </div>
+
+            <!-- Connector -->
+            <div class="flex items-center mx-5 flex-1">
+
+                <div class="flex-1 h-px bg-gray-300"></div>
+
+                <i class="fa-solid fa-arrow-right text-sky-600 text-xl mx-3"></i>
+
+                <div class="flex-1 h-px bg-gray-300"></div>
+
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 w-64 text-center shadow-sm hover:shadow-lg transition">
+
+                <div class="w-14 h-14 mx-auto rounded-full bg-sky-600 text-white flex items-center justify-center text-xl font-bold mb-5">
+                    2
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">
+                    Review Request
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    Our team reviews your enquiry and forwards it to the appropriate department.
+                </p>
+
+            </div>
+
+            <!-- Connector -->
+            <div class="flex items-center mx-5 flex-1">
+
+                <div class="flex-1 h-px bg-gray-300"></div>
+
+                <i class="fa-solid fa-arrow-right text-sky-600 text-xl mx-3"></i>
+
+                <div class="flex-1 h-px bg-gray-300"></div>
+
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 w-64 text-center shadow-sm hover:shadow-lg transition">
+
+                <div class="w-14 h-14 mx-auto rounded-full bg-sky-600 text-white flex items-center justify-center text-xl font-bold mb-5">
+                    3
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">
+                    Confirm Appointment
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    We confirm your preferred appointment date and time.
+                </p>
+
+            </div>
+
+            <!-- Connector -->
+            <div class="flex items-center mx-5 flex-1">
+
+                <div class="flex-1 h-px bg-gray-300"></div>
+
+                <i class="fa-solid fa-arrow-right text-sky-600 text-xl mx-3"></i>
+
+                <div class="flex-1 h-px bg-gray-300"></div>
+
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 w-64 text-center shadow-sm hover:shadow-lg transition">
+
+                <div class="w-14 h-14 mx-auto rounded-full bg-green-600 text-white flex items-center justify-center text-xl font-bold mb-5">
+                    ✓
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">
+                    Visit MediNova
+                </h3>
+
+                <p class="text-gray-600 leading-7">
+                    Meet your specialist and receive quality healthcare.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile & Tablet -->
+        <div class="lg:hidden space-y-6">
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+                <div class="w-14 h-14 rounded-full bg-sky-600 text-white flex items-center justify-center text-xl font-bold mb-5">1</div>
+                <h3 class="text-xl font-semibold mb-2">Submit Enquiry</h3>
+                <p class="text-gray-600">Fill out the contact form with your enquiry and details.</p>
+            </div>
+
+            <div class="text-center text-sky-600 text-3xl">↓</div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+                <div class="w-14 h-14 rounded-full bg-sky-600 text-white flex items-center justify-center text-xl font-bold mb-5">2</div>
+                <h3 class="text-xl font-semibold mb-2">Review Request</h3>
+                <p class="text-gray-600">Our team reviews your enquiry and forwards it to the appropriate department.</p>
+            </div>
+
+            <div class="text-center text-sky-600 text-3xl">↓</div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+                <div class="w-14 h-14 rounded-full bg-sky-600 text-white flex items-center justify-center text-xl font-bold mb-5">3</div>
+                <h3 class="text-xl font-semibold mb-2">Confirm Appointment</h3>
+                <p class="text-gray-600">We confirm your preferred appointment date and time.</p>
+            </div>
+
+            <div class="text-center text-sky-600 text-3xl">↓</div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+                <div class="w-14 h-14 rounded-full bg-green-600 text-white flex items-center justify-center text-xl font-bold mb-5">✓</div>
+                <h3 class="text-xl font-semibold mb-2">Visit MediNova</h3>
+                <p class="text-gray-600">Meet your specialist and receive quality healthcare.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Frequently Asked Questions -->
+<section class="bg-white py-20 px-6 lg:px-16">
+
+    <div class="max-w-5xl mx-auto">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+
+            <span class="inline-block bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                Frequently Asked Questions
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+                Have Questions? We've Got Answers
+            </h2>
+
+            <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-8">
+                Find answers to some of the most common questions about appointments, consultations, and our medical services.
+            </p>
+
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-5">
+
+            <!-- FAQ 1 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    How do I book an appointment?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    You can easily book an appointment online through our website, call our reception desk, or visit the hospital for in-person scheduling.
+                </p>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    What are your consultation hours?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    General consultations are available Monday to Saturday from 8:00 AM to 9:00 PM. Emergency services operate 24/7.
+                </p>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    What documents should I bring for my consultation?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    Please bring a valid ID, previous medical records, prescriptions, diagnostic reports, and your health insurance details if applicable.
+                </p>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    Do you offer online consultations?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    Yes. Selected specialists provide secure online consultations for follow-up visits and non-emergency medical advice.
+                </p>
+            </details>
+
+            <!-- FAQ 5 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    How can I reschedule or cancel my appointment?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    You can reschedule or cancel your appointment by contacting our support team or managing your booking through our online appointment portal.
+                </p>
+            </details>
+			 
+			<!-- FAQ 6 -->
+			<details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    Do you provide emergency medical services?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    Yes. Our emergency department is open 24 hours a day, seven days a week to provide immediate medical care.
+                </p>
+            </details>
+
+            <!-- FAQ 7 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                    What should I do in case of a medical emergency?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    For medical emergencies, immediately contact our 24/7 emergency department or call our emergency helpline for prompt assistance.
+                </p>
+            </details>
+			
+			<!-- FAQ 8 -->
+            <details class="group bg-gray-50 border-sky-600 border-2 rounded-2xl p-6 shadow-sm">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-gray-800 text-lg list-none">
+                       Which insurance plans do you accept?
+                    <span class="text-sky-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                </summary>
+
+                <p class="mt-4 text-gray-600 leading-7">
+                    We work with a wide range of insurance providers. Please contact our support team to verify your specific insurance coverage.
+                </p>
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    alert("Your message has been sent successfully!");
+
+    this.reset();
+
+});
+
+</script>
+<!-- ===================== FOOTER ===================== -->
+
+<footer class="bg-slate-900 text-white pt-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+
+            <!-- Column 1 -->
+
+            <div class="lg:col-span-2">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="img/MediNova-logo.png"
+                         class="h-20 rounded"
+                         alt="MediNova Logo">
+
+                    <div>
+
+                        <h2 class="text-3xl font-bold">
+                            MediNova
+                        </h2>
+
+                        <p class="tracking-[3px] uppercase text-sky-400 text-sm">
+                            Healthcare
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    MediNova is committed to delivering compassionate,
+                    high-quality healthcare with advanced medical
+                    technology and experienced professionals. Your
+                    health and well-being remain our highest priority.
+
+                </p>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Column 2 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Quick Links
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li><a href="index.html" class="hover:text-sky-400 duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-sky-400 duration-300">About Us</a></li>
+					<li><a href="departments.html" class="hover:text-sky-400 duration-300">Departments</a></li>
+				    <li><a href="doctors.html" class="hover:text-sky-400 duration-300">Doctors</a></li>
+                    <li><a href="services.html" class="hover:text-sky-400 duration-300">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-sky-400 duration-300">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 3 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Our Services
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li>Cardiology</li>
+                    <li>Neurology</li>
+                    <li>Orthopedics</li>
+                    <li>Pediatrics</li>					
+					<li>Ophthalmology</li>
+					<li>Women's Health</li>
+					<li>Dental Care</li>
+					<li>Pulmonology</li>
+                    <li>General Medicine</li>
+					<li>Pathology</li>
+					<li>Dermatology</li>
+					<li>Oncology</li>
+                    <li>Emergency Care</li>
+					
+                </ul>
+
+            </div>
+
+            <!-- Column 4 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Contact Info
+
+                </h3>
+
+                <div class="space-y-6 text-gray-300">
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-location-dot text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            123 Healthcare Avenue,
+                            Chennai,
+                            Tamil Nadu
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-phone text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            +91 98765 43210
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-envelope text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            info@medinova.com
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-regular fa-clock text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            Mon - Sat
+                            <br>
+
+                            8:00 AM - 9:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <div class="border-t border-slate-700 mt-16">
+
+        <div class="max-w-7xl mx-auto px-6 py-6">
+
+                <p class="text-gray-400 text-center">
+                    © 2026 MediNova Healthcare.
+                    All Rights Reserved.
+                </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

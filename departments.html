@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediNova | Caring Beyond Medicine</title>
+ 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            background:#F8FBFF;
+        }
+
+        h1,h2,h3,h4,h5{
+            font-family:'Poppins',sans-serif;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+
+<header class="sticky top-0 z-50 bg-white shadow-md">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <nav class="flex flex-row justify-between items-center py-2 relative">
+
+           
+
+            <div class="flex items-center justify-between w-full md:w-auto gap-3">
+
+                <img src= "img/MediNova-logo.png" alt="MediNova Logo" class="h-16 md:h-24 w-auto">
+      
+            </div>
+
+           
+
+            <ul class="hidden md:flex flex-wrap justify-center gap-8 mt-5 lg:mt-0">
+
+                <li><a href="index.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Home</a></li>   
+                <li><a href="about.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">About</a></li>    
+                <li><a href="departments.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Departments</a></li>   
+                <li><a href="doctors.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Doctors</a></li> 
+                <li><a href="services.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Services</a></li>				
+                <li><a href="contact.html" class="text-blue-900 font-semibold hover:text-sky-500 duration-300">Contact</a></li> 
+			    <button><a href="appointment.html" class="mt-5 lg:mt-0 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3 rounded-full duration-300 shadow-lg">Book Appointment</a></<button>
+				
+            </ul>
+            
+			
+		    <!--3 lines-hamburger-->
+			<label for="menuToggle" class ="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			<span class="block w-8 h-0.5 bg-blue-800"></span>
+			</label>
+			
+			
+            
+			
+        </nav>
+		<!--peer element's state for sm devices-->
+			<input type = "checkbox" id="menuToggle" class="hidden peer"/>
+			<div class="hidden peer-checked:block md:hidden bg-white px-6 pb-4">
+			<ul class="flex flex-col space-y-3 text-blue-800 font-medium">
+			<li><a href = "index.html" class="block hover:text-sky-600">Home</a></li>
+			<li><a href = "about.html" class="block hover:text-sky-600">About</a></li>
+			<li><a href = "departments.html" class="block hover:text-sky-600">Departments</a></li>
+			<li><a href = "doctors.html" class="block hover:text-sky-600">Doctors</a></li>
+			<li><a href = "services.html" class="block hover:text-sky-600">Services</a></li>
+			<li><a href = "contact.html" class="block hover:text-sky-600">Contact</a></li>
+			</ul>
+			<button><a href="appointment.html" class="inline-block mt-5 bg-blue-900 hover:bg-sky-500 text-white px-6 py-3  rounded-full duration-300 shadow-lg">Book Appointment </a>
+			</div>
+		
+		
+
+    </div>
+
+</header>
+
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-50 py-20 lg:py-28">
+
+    <!-- Background Decorations -->
+    <div class="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-40 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-cyan-100 rounded-full blur-3xl opacity-40 translate-x-1/3 translate-y-1/3"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left Content -->
+            <div>
+
+                <!-- Breadcrumb -->
+                <p class="text-blue-600 font-medium mb-4">
+                    Home <span class="mx-2 text-gray-400">/</span> Departments
+                </p>
+
+                <!-- Heading -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Explore Our
+                    <span class="text-blue-900">
+                        Medical Departments
+                    </span>
+                </h1>
+
+                <!-- Description -->
+                <p class="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
+                    Discover a wide range of specialized medical departments staffed by
+                    experienced doctors, advanced diagnostic facilities, and compassionate
+                    healthcare professionals dedicated to providing exceptional patient care.
+                </p>
+
+                <!-- Buttons -->
+                <div class="mt-10 flex flex-wrap gap-4">
+
+                    <button>
+					<a href="#departments"
+                       class="bg-blue-800 text-white px-7 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
+                        Explore Departments
+                    </a>
+					</button>
+
+                    <button>
+					<a href="appointment.html"
+                       class="border border-blue-800 text-blue-800 px-7 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition duration-300">
+                        Book Appointment
+                    </a>
+					</button>
+
+                </div>
+
+            </div>
+
+            <!-- Right Image -->
+            <div>
+
+                <img src="img/medical-department.jpg"
+                     alt="Medical Departments"
+                     class="rounded-3xl shadow-2xl w-full object-cover">
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== Departments Section ===================== -->
+<section id="departments" class="py-20 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- Section Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+            <span
+                class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                Our Departments
+            </span>
+
+            <h2 class="mt-4 text-4xl font-extrabold text-gray-900">
+                Explore Our Specialized Departments
+            </h2>
+
+            <p class="mt-5 text-lg text-gray-600 leading-relaxed">
+                Our experienced specialists provide comprehensive diagnosis,
+                treatment, and compassionate care across a wide range of
+                medical specialties.
+            </p>
+
+        </div>
+
+        <!-- Department Cards -->
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Cardiology -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+                <div class="overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPc2412Jw76ZfmgM0NPYo3Lxt31qZwl7igc6345mWuBw&s=10"
+                        alt="Cardiology"
+                        class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="p-7">
+
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-red-100 flex items-center justify-center mb-5 group-hover:bg-red-500 transition">
+
+                        <i
+                            class="fa-solid fa-heart-pulse text-red-600 text-2xl group-hover:text-white"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        Cardiology
+                    </h3>
+
+                    <p class="mt-3 text-gray-600 leading-relaxed">
+                        Advanced heart diagnosis, preventive care, cardiac surgery,
+                        and rehabilitation by experienced cardiologists.
+                    </p>
+
+                    <a href="#"
+                        class="inline-flex items-center mt-6 text-blue-600 font-semibold hover:gap-3 transition-all gap-2">
+
+                        Learn More
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Neurology -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+                <div class="overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycSvPIqJaH89bugZ68EyJ2B3JFLVnCIlMP0aa-Dpm4A&s=10"
+                        alt="Neurology"
+                        class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="p-7">
+
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-5 group-hover:bg-blue-600 transition">
+
+                        <i
+                            class="fa-solid fa-brain text-blue-600 text-2xl group-hover:text-white"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        Neurology
+                    </h3>
+
+                    <p class="mt-3 text-gray-600 leading-relaxed">
+                        Expert diagnosis and treatment for disorders affecting the
+                        brain, spinal cord, and nervous system.
+                    </p>
+
+                    <a href="#"
+                        class="inline-flex items-center mt-6 text-blue-600 font-semibold hover:gap-3 transition-all gap-2">
+
+                        Learn More
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Orthopedics -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+                <div class="overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7dnzakL0Rl8QegG_ySowKRLQ0CWIIrmY9jgUdrYy4SQ&s=10"
+                        alt="Orthopedics"
+                        class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="p-7">
+
+                    <div class="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center mb-5 group-hover:bg-green-600 transition">
+
+                        <i class="fa-solid fa-bone text-green-600 text-2xl group-hover:text-white"></i>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        Orthopedics
+                    </h3>
+
+                    <p class="mt-3 text-gray-600 leading-relaxed">
+                        Specialized care for bones, joints, fractures, sports injuries,
+                        and joint replacement procedures.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold hover:gap-3 transition-all gap-2">
+
+                        Learn More
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+           
+
+            <!-- Pediatrics -->
+			
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWXXQbFAim2pwrZLA3zKFzIHpFlocaaOuY6OZ5FlBwQ&s=10"
+						alt="Pediatrics"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-pink-100 flex items-center justify-center mb-5 group-hover:bg-pink-600 transition">
+
+						<i class="fa-solid fa-baby text-pink-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">Pediatrics</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Comprehensive healthcare for infants, children, and adolescents with compassionate pediatric specialists.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+						Learn More
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+
+				</div>
+
+			</div>
+				
+			
+            <!-- Ophthalmology -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaR2_JqaBxFwjzPkLtrZ1osWVF5mslYHh2qEEonEOGYw&s=10"
+						alt="Ophthalmology"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-cyan-100 flex items-center justify-center mb-5 group-hover:bg-cyan-600 transition">
+
+						<i class="fa-solid fa-eye text-cyan-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">Ophthalmology</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Advanced eye care services including vision testing, cataract surgery, glaucoma treatment, and LASIK.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+						Learn More
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+
+				</div>
+
+			</div>
+			
+			<!-- Women's Health -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7ljEU22TDRnrFziUv2MeJY0SJUi1dN6nkSeJshjpSw&s=10"
+						alt="Women's Health"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-rose-100 flex items-center justify-center mb-5 group-hover:bg-rose-600 transition">
+
+						<i class="fa-solid fa-person-dress text-rose-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">Women's Health</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Specialized care for women's wellness, maternity, gynecology, and reproductive health at every stage of life.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+						Learn More
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+
+				</div>
+
+			</div>
+            
+			<!-- Dental Care -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://www.phcx.org/site/wp-content/uploads/2018/02/The-Importance-of-Dental-Care-to-Overall-Wellness.jpg"
+						alt="Dental Care"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center mb-5 group-hover:bg-indigo-600 transition">
+
+						<i class="fa-solid fa-tooth text-indigo-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">Dental Care</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Complete dental solutions including preventive care, cosmetic dentistry, orthodontics, and oral surgery.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+						Learn More
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+
+				</div>
+
+			</div>
+            
+			<!-- Pulmonology -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-HaVZ0CdDCOngrJMoAfLsy61QCTOYfb_L54iO1b_GQ&s=10"
+						alt="Pulmonology"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center mb-5 group-hover:bg-purple-600 transition">
+
+						<i class="fa-solid fa-lungs text-purple-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">
+						Pulmonology
+					</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Comprehensive diagnosis and treatment for asthma, COPD, lung infections, sleep disorders, and respiratory diseases.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+
+						Learn More
+
+						<i class="fa-solid fa-arrow-right"></i>
+
+					</a>
+
+				</div>
+
+			</div>
+            <!-- General Medicine -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR3JwaCP3-eJYQ6f5z35HppUGgBXwivza9n0CsNKh4bQ&s=10"
+						alt="General Medicine"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-5 group-hover:bg-blue-600 transition">
+
+						<i class="fa-solid fa-stethoscope text-blue-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">
+						General Medicine
+					</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Primary healthcare services including routine checkups, preventive care, diagnosis, and long-term disease management.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+
+						Learn More
+
+						<i class="fa-solid fa-arrow-right"></i>
+
+					</a>
+
+				</div>
+
+			</div>
+            <!-- Pathology -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK2pLUL0-5mHyEaQ2fCkp4wC8PMsHS46CbEDn9PyFwWQ&s=10"
+				
+						alt="Pathology"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center mb-5 group-hover:bg-amber-500 transition">
+
+						<i class="fa-solid fa-flask-vial text-amber-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">
+						Pathology
+					</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Accurate laboratory testing and diagnostic services supporting early disease detection and effective treatment planning.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+
+						Learn More
+
+						<i class="fa-solid fa-arrow-right"></i>
+
+					</a>
+
+				</div>
+
+			</div>
+            
+            <!-- Oncology -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8lElP6qf1nxYpi872cBhmtaNZRTbigTMrfNtPYO2qEw&s=10"
+						alt="Oncology"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-red-100 flex items-center justify-center mb-5 group-hover:bg-red-600 transition">
+
+						<i class="fa-solid fa-ribbon text-red-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">
+						Oncology
+					</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Comprehensive cancer diagnosis, chemotherapy, targeted therapies, immunotherapy, and compassionate patient support.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+
+						Learn More
+
+						<i class="fa-solid fa-arrow-right"></i>
+
+					</a>
+
+				</div>
+
+			</div>
+           
+			
+			<!-- Emergency Medicine -->
+			<div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 group">
+
+				<div class="overflow-hidden">
+					<img src="img/Ambulance.png"
+						alt="Emergency Medicine"
+						class="w-full h-56 object-cover group-hover:scale-110 transition duration-500">
+				</div>
+
+				<div class="p-7">
+
+					<div class="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center mb-5 group-hover:bg-green-600 transition">
+
+						<i class="fa-solid fa-truck-medical text-green-600 text-2xl group-hover:text-white"></i>
+
+					</div>
+
+					<h3 class="text-2xl font-bold text-gray-800">
+						Emergency Medicine
+					</h3>
+
+					<p class="mt-3 text-gray-600 leading-relaxed">
+						Round-the-clock emergency and trauma care with rapid response teams equipped to handle critical medical situations.
+					</p>
+
+					<a href="#" class="inline-flex items-center mt-6 text-blue-600 font-semibold gap-2 hover:gap-3 transition-all">
+
+						Learn More
+
+						<i class="fa-solid fa-arrow-right"></i>
+
+					</a>
+
+				</div>
+
+			</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== Why Choose Our Departments ===================== -->
+<section class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+            <span
+                class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                Why Choose Us
+            </span>
+
+            <h2 class="mt-4 text-4xl font-extrabold text-gray-900">
+                Why Choose Our Departments?
+            </h2>
+
+            <p class="mt-5 text-lg text-gray-600 leading-relaxed">
+                Our multidisciplinary team combines medical expertise,
+                advanced technology, and compassionate care to deliver
+                exceptional healthcare across every specialty.
+            </p>
+
+        </div>
+
+        <!-- Feature Grid -->
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Feature 1 -->
+            <div
+                class="group bg-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-blue-800">
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center group-hover:bg-blue-800 transition">
+
+                    <i class="fa-solid fa-user-doctor text-3xl text-blue-800 group-hover:text-white"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-gray-800">
+                    Expert Specialists
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Board-certified doctors with extensive experience across
+                    multiple medical specialties, delivering trusted and
+                    evidence-based treatments.
+                </p>
+
+            </div>
+
+            <!-- Feature 2 -->
+            <div
+                class="group bg-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-blue-800">
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-cyan-100 flex items-center justify-center group-hover:bg-cyan-600 transition">
+
+                    <i class="fa-solid fa-microscope text-3xl text-cyan-600 group-hover:text-white"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-gray-800">
+                    Advanced Technology
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Modern diagnostic equipment and innovative treatment
+                    technologies ensure precise diagnosis and better patient
+                    outcomes.
+                </p>
+
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+                class="group bg-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-blue-800">
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-red-100 flex items-center justify-center group-hover:bg-red-600 transition">
+
+                    <i class="fa-solid fa-heart text-3xl text-red-600 group-hover:text-white"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-gray-800">
+                    Patient-Centered Care
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Every patient receives personalized attention, treatment
+                    planning, and compassionate support throughout their
+                    healthcare journey.
+                </p>
+
+            </div>
+
+            <!-- Feature 4 -->
+            <div
+                class="group bg-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-blue-800">
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center group-hover:bg-green-600 transition">
+
+                    <i class="fa-solid fa-truck-medical text-3xl text-green-600 group-hover:text-white"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-gray-800">
+                    24/7 Emergency Support
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Dedicated emergency physicians and trauma specialists are
+                    available around the clock for immediate medical care.
+                </p>
+
+            </div>
+
+            <!-- Feature 5 -->
+            <div
+                class="group bg-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-blue-800">
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center group-hover:bg-purple-600 transition">
+
+                    <i class="fa-solid fa-file-medical text-3xl text-purple-600 group-hover:text-white"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-gray-800">
+                    Personalized Treatment
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Customized treatment plans are created to match each
+                    patient's condition, lifestyle, and long-term health goals.
+                </p>
+
+            </div>
+
+            <!-- Feature 6 -->
+            <div
+                class="group bg-gray-50 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-transparent hover:border-blue-800">
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center group-hover:bg-orange-500 transition">
+
+                    <i class="fa-solid fa-handshake text-3xl text-orange-500 group-hover:text-white"></i>
+
+                </div>
+
+                <h3 class="mt-6 text-2xl font-bold text-gray-800">
+                    Collaborative Healthcare
+                </h3>
+
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    Specialists from different departments work together to
+                    provide coordinated, comprehensive, and seamless patient
+                    care.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== Call To Action ===================== -->
+<section class="py-20 bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-500 relative overflow-hidden">
+
+    <!-- Decorative Circles -->
+    <div class="absolute -top-20 -left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Left Content -->
+            <div>
+
+                <span class="inline-block bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                    Need Expert Medical Care?
+                </span>
+
+                <h2 class="mt-6 text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+
+                    Your Health Is Our
+                    <br>
+                    Highest Priority
+
+                </h2>
+
+                <p class="mt-6 text-lg text-blue-100 leading-relaxed">
+
+                    Whether you need a routine consultation or specialized
+                    treatment, our experienced doctors and advanced medical
+                    departments are here to provide exceptional care with
+                    compassion and expertise.
+
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-10">
+
+                    <button>
+					<a href="appointment.html"
+                        class="bg-white text-blue-800 px-7 py-3 rounded-xl font-semibold hover:bg-gray-100 transition">
+
+                        Book Appointment
+
+                    </a>
+					</button>
+
+                    <button>
+					<a href="contact.html"
+                        class="border border-white text-white px-7 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-800 transition">
+
+                        Contact Us
+
+                    </a>
+					</button>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="grid grid-cols-2 gap-6">
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 text-center border border-white/20">
+
+                    <i class="fa-solid fa-user-doctor text-4xl text-white"></i>
+
+                    <h3 class="mt-5 text-3xl font-bold text-white">
+                        120+
+                    </h3>
+
+                    <p class="text-blue-100 mt-2">
+                        Experienced Doctors
+                    </p>
+
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 text-center border border-white/20">
+
+                    <i class="fa-solid fa-hospital text-4xl text-white"></i>
+
+                    <h3 class="mt-5 text-3xl font-bold text-white">
+                        20+
+                    </h3>
+
+                    <p class="text-blue-100 mt-2">
+                        Medical Departments
+                    </p>
+
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 text-center border border-white/20">
+
+                    <i class="fa-solid fa-heart-pulse text-4xl text-white"></i>
+
+                    <h3 class="mt-5 text-3xl font-bold text-white">
+                        50K+
+                    </h3>
+
+                    <p class="text-blue-100 mt-2">
+                        Happy Patients
+                    </p>
+
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-6 text-center border border-white/20">
+
+                    <i class="fa-solid fa-clock text-4xl text-white"></i>
+
+                    <h3 class="mt-5 text-3xl font-bold text-white">
+                        24/7
+                    </h3>
+
+                    <p class="text-blue-100 mt-2">
+                        Emergency Care
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer class="bg-slate-900 text-white pt-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+
+            <!-- Column 1 -->
+
+            <div class="lg:col-span-2">
+
+                <div class="flex items-center gap-4">
+
+                    <img src="img/MediNova-logo.png"
+                         class="h-20 rounded"
+                         alt="MediNova Logo">
+
+                    <div>
+
+                        <h2 class="text-3xl font-bold">
+                            MediNova
+                        </h2>
+
+                        <p class="tracking-[3px] uppercase text-sky-400 text-sm">
+                            Healthcare
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p class="text-gray-300 mt-6 leading-8">
+
+                    MediNova is committed to delivering compassionate,
+                    high-quality healthcare with advanced medical
+                    technology and experienced professionals. Your
+                    health and well-being remain our highest priority.
+
+                </p>
+
+                <div class="flex gap-4 mt-8">
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                    <a href="#"
+                    class="w-12 h-12 rounded-full bg-blue-900 hover:bg-sky-500 flex items-center justify-center duration-300">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Column 2 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Quick Links
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li><a href="index.html" class="hover:text-sky-400 duration-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-sky-400 duration-300">About Us</a></li>
+					<li><a href="departments.html" class="hover:text-sky-400 duration-300">Departments</a></li>
+				    <li><a href="doctors.html" class="hover:text-sky-400 duration-300">Doctors</a></li>
+                    <li><a href="services.html" class="hover:text-sky-400 duration-300">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-sky-400 duration-300">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 3 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Our Services
+
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li>Cardiology</li>
+                    <li>Neurology</li>
+                    <li>Orthopedics</li>
+                    <li>Pediatrics</li>					
+					<li>Ophthalmology</li>
+					<li>Women's Health</li>
+					<li>Dental Care</li>
+					<li>Pulmonology</li>
+                    <li>General Medicine</li>
+					<li>Pathology</li>
+					<li>Dermatology</li>
+					<li>Oncology</li>
+                    <li>Emergency Care</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Column 4 -->
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8">
+
+                    Contact Info
+
+                </h3>
+
+                <div class="space-y-6 text-gray-300">
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-location-dot text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            123 Healthcare Avenue,
+                            Chennai,
+                            Tamil Nadu
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-phone text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            +91 98765 43210
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-solid fa-envelope text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            info@medinova.com
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-4">
+
+                        <i class="fa-regular fa-clock text-sky-400 mt-1"></i>
+
+                        <p>
+
+                            Mon - Sat
+                            <br>
+
+                            8:00 AM - 9:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="border-t border-slate-700 mt-16">
+
+        <div class="max-w-7xl mx-auto px-6 py-6">
+
+                <p class="text-gray-400 text-center">
+                    © 2026 MediNova Healthcare.
+                    All Rights Reserved.
+                </p>
+
+        </div>
+
+    </div>
+
+</footer>
